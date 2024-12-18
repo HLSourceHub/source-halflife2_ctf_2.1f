@@ -1,0 +1,281 @@
+// ***********************************************************************************
+// HL2 CTF Soundscapes
+// ***********************************************************************************
+
+// DSP Effects
+// 0 : "Normal (off)"
+// 1 : "Generic"
+// 2 : "Metal Small"
+// 3 : "Metal Medium"
+// 4 : "Metal Large"
+// 5 : "Tunnel Small"
+// 6 : "Tunnel Medium"
+// 7 : "Tunnel Large"
+// 8 : "Chamber Small"
+// 9 : "Chamber Medium"
+// 10: "Chamber Large"
+// 11: "Bright Small"
+// 12: "Bright Medium"
+// 13: "Bright Large"
+// 14: "Water 1"
+// 15: "Water 2"
+// 16: "Water 3"
+// 17: "Concrete Small"
+// 18: "Concrete Medium"
+// 19: "Concrete Large"
+// 20: "Big 1"
+// 21: "Big 2"
+// 22: "Big 3"
+// 23: "Cavern Small"
+// 24: "Cavern Medium"
+// 25: "Cavern Large"
+// 26: "Weirdo 1"
+// 27: "Weirdo 2"
+// 28: "Weirdo 3"
+
+//	ATTN_NONE		0.0f
+//	ATTN_NORM		0.8f	75dB
+//	ATTN_IDLE		2.0f	60dB
+//	ATTN_STATIC		1.25f	66dB
+//	ATTN_RICOCHET		1.5f	65dB
+//	ATTN_GUNFIRE		0.27f	140dB
+
+//	SNDLVL_50dB		= 50
+//	SNDLVL_55dB		= 55
+//	SNDLVL_IDLE		= 60
+//	SNDLVL_TALKING		= 60
+//	SNDLVL_60dB		= 60
+//	SNDLVL_65dB		= 65
+//	SNDLVL_STATIC		= 66
+//	SNDLVL_70dB		= 70
+//	SNDLVL_NORM		= 75
+//	SNDLVL_75dB		= 75
+//	SNDLVL_80dB		= 80
+//	SNDLVL_85dB		= 85
+//	SNDLVL_90dB		= 90
+//	SNDLVL_95dB		= 95
+//	SNDLVL_100dB		= 100
+//	SNDLVL_105dB		= 105
+//	SNDLVL_120dB		= 120
+//	SNDLVL_130dB		= 130
+//	SNDLVL_GUNFIRE		= 140
+//	SNDLVL_140dB		= 140
+//	SNDLVL_150dB		= 150
+
+"CTF.OutdoorSmall"
+{
+	"dsp"	"20"
+	"dsp_volume" "1"
+}
+
+"CTF.OutdoorMedium"
+{
+	"dsp"	"21"
+	"dsp_volume" "1"
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"100"
+		"wave"		"ctf/ambient/ambient_ctf_wind2.wav"
+	}
+}
+
+"CTF.OutdoorLarge"
+{
+	"dsp"	"22"
+	"dsp_volume" "1"
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"wave"		"ctf/ambient/ambient_ctf_wind.wav"
+	}
+}
+
+"CTF.Canyon"
+{
+	"dsp"	"14"
+	"dsp_volume" "0.5"
+}
+
+"CTF.Dirtwork"
+{
+	"dsp"	"14"
+	"dsp_volume" "0.7"
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"wave"		"ctf/ambient/ambient_ctf_wind.wav"
+	}
+}
+
+"CTF.Dirtwork.Light"
+{
+	"dsp"	"1"
+	"dsp_volume" "0.5"
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"wave"		"ctf/ambient/ambient_ctf_wind2.wav"
+	}
+}
+
+"CTF.AmbientSuburb"
+{
+	"dsp"	"10"
+	"dsp_volume" "1.0"
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"		"ctf/ambient/ambient_ctf_suburb_loop.wav"
+	}
+}
+
+"CTF.HeavyAir"
+{
+	"dsp"	"10"
+	"dsp_volume" "1.0"
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"		"ctf/ambient/ambient_ctf_heavy_air.wav"
+	}
+}
+
+"CTF.Machine"
+{
+	"dsp"	"1"
+	"dsp_volume" "0.8"
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"		"ctf/ambient/ambient_ctf_machine.wav"
+	}
+}
+
+"CTF.LightRain"
+{
+	"dsp"	"14"
+	"dsp_volume" "0.8"
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"wave"		"ctf/ambient/ambient_ctf_light_rain.wav"
+	}
+}
+
+"CTF.Subway.Large"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"wave"		"ambient/atmosphere/Drone2LP.wav"
+	}
+
+	"playsoundscape"
+	{
+		"name"		"prison.util_distant_trains"
+		"volume"	"0.5"
+	}
+
+	"playrandom"
+	{
+		"time"		"15, 60"
+		"volume"	"0.1,0.3"
+		"pitch"		"95,105"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave"	"ambient/atmosphere/city_skypass1.wav"
+			"wave"	"ambient/atmosphere/city_truckpass1.wav"
+		}
+	}
+}
+
+"CTF.Subway.Medium"
+{
+	"dsp"	"1"
+	"dsp_volume" "0.7"
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"wave"		"ambient/atmosphere/Drone2LP.wav"
+	}
+}
+
+"CTF.Subway.Small"
+{
+	"dsp"	"1"
+	"dsp_volume" "0.5"
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"wave"		"ambient/atmosphere/Drone2LP.wav"
+	}
+
+	"playrandom"
+	{
+		"time"		"20,40"
+		"volume"	"0.2,0.4"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"	"ambient/creatures/rats1.wav"
+			"wave"	"ambient/creatures/rats2.wav"
+			"wave"	"ambient/creatures/rats3.wav"
+			"wave"	"ambient/creatures/rats4.wav"
+		}
+		
+	}
+}
+
+"CTF.Floodzone"
+{
+	"dsp"	"1"
+	"dsp_volume" "0.5"
+
+	"playlooping"
+	{
+		"volume"	"0.35"
+		"wave"		"ctf/ambient/ambient_ctf_wind.wav"
+	}
+
+	"playrandom"
+	{
+		"time"		"8,30"
+		"volume"	"0.1,0.3"
+		"pitch"		"90,115"
+		"soundlevel"	"SNDLVL_140db"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"	"ambient/levels/canals/swamp_bird1.wav"
+			"wave"	"ambient/levels/canals/swamp_bird4.wav"
+			"wave"	"ambient/levels/canals/swamp_bird5.wav"
+			"wave"	"ambient/levels/canals/swamp_bird6.wav"
+		}
+	}
+
+	"playrandom"
+	{
+		"time"		"15,45"
+		"volume"	"0.8"
+		"pitch"		"90,110"
+		"soundlevel"	"SNDLVL_140db"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"	"ambient/atmosphere/thunder3.wav"
+			"wave"	"ambient/atmosphere/thunder4.wav"
+		}
+	}
+}

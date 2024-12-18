@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	// Rubber Duck Prop
+	"$baseTexture" "models/props_ctf/rubber_duck"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[ .2 .2 .2]"
+	"$surfaceprop" "plastic"
+	"$nodecal" 1
+	"$model" 1
+}

@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	// Original shader: BaseTimesLightmap
+	"$basetexture" "Metal/metalfloor002a"
+	"$surfaceprop" "metal"
+	"%keywords" "borealis"
+	"$bumpmap" "hl2ctf/prisonriot/metalfloor002a_normal"
+}

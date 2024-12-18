@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "hl2ctf\decals\ctf_glass_stains01"
+	"$translucent" 1
+	"$decal" 1
+	"$decalscale" "0.25"
+	"%keywords" "hl2ctf"
+}

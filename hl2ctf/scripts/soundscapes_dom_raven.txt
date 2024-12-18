@@ -1,0 +1,99 @@
+// ***************** Sander's Raven *****************
+
+"dom_raven.Street"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.55"
+		"wave"		"ambient/atmosphere/town_ambience.wav"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+
+	"playrandom"
+	{
+		"time"		"6,12"
+		"volume"	"0.35,0.65"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"	"ambient/wind/wind_moan1.wav"
+			"wave"	"ambient/wind/wind_moan2.wav"
+			"wave"	"ambient/wind/wind_snippet1.wav"
+			"wave"	"ambient/wind/wind_snippet3.wav"
+			"wave"	"ambient/wind/wind_moan4.wav"
+			"wave"	"ambient/materials/shutter7.wav"
+			"wave"	"ambient/materials/shutter8.wav"
+			"wave"	"ambient/materials/metal4.wav"
+			"wave"	"ambient/materials/metal5.wav"
+			"wave"	"ambient/atmosphere/cave_hit5.wav"
+			"wave"	"ambient/atmosphere/cave_hit6.wav"
+		}
+		
+	}
+}
+
+"dom_raven.Street.Buildings"
+{
+	"dsp"	"1"
+	"dsp_volume" "1.0"
+
+	"playlooping"
+	{
+		"volume"	"0.25"
+		"wave"		"ambient/atmosphere/town_ambience.wav"
+		"pitch"		"100"
+		"attenuation"	"0"
+	}
+
+	"playrandom"
+	{
+		"time"		"9,16"
+		"volume"	"0.35,0.6"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_120db"
+
+		"rndwave"
+		{
+			"wave"	"ambient/materials/wood_creak1.wav"
+			"wave"	"ambient/materials/wood_creak2.wav"
+			"wave"	"ambient/materials/wood_creak3.wav"
+			"wave"	"ambient/materials/wood_creak4.wav"
+			"wave"	"ambient/materials/wood_creak5.wav"
+			"wave"	"ambient/materials/wood_creak6.wav"
+			"wave"	"ambient/materials/shutter7.wav"
+			"wave"	"ambient/materials/shutter8.wav"
+			"wave"	"ambient/materials/metal4.wav"
+			"wave"	"ambient/materials/metal5.wav"
+			"wave"	"ambient/atmosphere/cave_hit5.wav"
+			"wave"	"ambient/atmosphere/cave_hit6.wav"
+		}
+	
+	}
+
+	"playrandom"
+	{
+		"time"		"20,40"
+		"volume"	"0.25,0.35"
+		"pitch"		"95,105"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140db"
+
+		"rndwave"
+		{
+			"wave"	"ambient/creatures/rats1.wav"
+			"wave"	"ambient/creatures/rats2.wav"
+			"wave"	"ambient/creatures/rats3.wav"
+			"wave"	"ambient/creatures/rats4.wav"
+			"wave"	"ambient/creatures/flies1.wav"
+			"wave"	"ambient/creatures/flies4.wav"
+		}	
+	}
+}

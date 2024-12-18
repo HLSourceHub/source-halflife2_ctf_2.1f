@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\vw_smg1\fore"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "models\weapons\vw_smg1\fore.ref"
+}

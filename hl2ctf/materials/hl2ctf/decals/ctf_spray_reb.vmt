@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	// Rebel Spraypaint Decal
+	"$baseTexture" "hl2ctf/decals/ctf_spray_reb"
+	"$translucent" 1
+	"$decal" 1
+	"$decalscale" "0.25"
+	"%keywords" "hl2ctf"
+}

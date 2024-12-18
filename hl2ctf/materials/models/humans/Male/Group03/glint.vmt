@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models/humans/male/group03/glint"
+	"$additive" "1"
+	"$model" "1"
+}

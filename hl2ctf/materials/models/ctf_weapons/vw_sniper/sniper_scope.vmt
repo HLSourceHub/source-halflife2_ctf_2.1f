@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\ctf_weapons\vw_sniper\sniper_scope"
+	"$envmapmask" "models\ctf_weapons\vw_sniper\sniper_scope_mask"
+	"$envmap" "env_cubemap"
+	"$model" 1
+}

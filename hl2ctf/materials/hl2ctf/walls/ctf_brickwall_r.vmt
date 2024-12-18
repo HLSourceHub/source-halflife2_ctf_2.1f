@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "hl2ctf/walls/ctf_brickwall_r"
+	"$surfaceprop" "brick"
+	"%keywords" "hl2ctf"
+}

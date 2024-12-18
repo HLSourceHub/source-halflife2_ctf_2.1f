@@ -1,0 +1,7 @@
+"LightMappedGeneric"
+{
+	"$baseTexture" "hl2ctf\doors\ctf_large_door_wide"
+	"$bumpmap" "hl2ctf\doors\ctf_large_door_wide_normal"
+	"$surfaceprop" "metal"
+	"%keywords" "hl2ctf"
+}

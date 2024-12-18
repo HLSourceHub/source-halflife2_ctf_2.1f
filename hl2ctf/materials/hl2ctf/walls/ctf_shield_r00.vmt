@@ -1,0 +1,24 @@
+"Unlittwotexture"
+{
+	"$basetexture" "hl2ctf/walls/ctf_shield_r00"
+	"$texture2" "hl2ctf/walls/ctf_shield_r01"
+	"$translucent" "1"
+	"$additive" 1
+	"$nodecal" 1
+
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$basetexturetransform"
+			"texturescrollrate" .03
+			"texturescrollangle" 90
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar" "$texture2transform"
+			"texturescrollrate" .02
+			"texturescrollangle" -90
+		}
+	}
+}

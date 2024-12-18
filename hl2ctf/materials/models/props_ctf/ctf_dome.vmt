@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	// CTF Ceiling Dome
+	"$baseTexture" "models/props_ctf/ctf_dome"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[ .3 .3 .3]"
+	"$surfaceprop" "metal"
+	"$selfillum" 1
+	"$nodecal" 1
+	"$model" 1
+}

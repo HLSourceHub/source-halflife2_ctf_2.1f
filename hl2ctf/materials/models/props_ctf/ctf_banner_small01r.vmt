@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	// Banner: Rebel Clean
+	"$basetexture" "models/props_ctf/ctf_banner_small01r"
+	"$nodecal" "1"
+	"$nocull" "1"
+	"$model" "1"
+}

@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "Metal/metalwall063a"
+	"$surfaceprop" "metal"
+	"%keywords" "combine"
+	"$bumpmap" "hl2ctf/thegreatwall/citadel_metalwall063a_normal"
+}

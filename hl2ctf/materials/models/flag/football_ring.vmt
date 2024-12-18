@@ -1,0 +1,22 @@
+"UnLitGeneric"
+{
+	// Football Flag Ring
+	"$baseTexture" "models/flag/football_ring"
+  "$selfillum_envmapmask_alpha" 1
+	"$translucent" 1
+	"$nofog" "1"
+	"$nocull" 1
+	"$nodecal" 1
+	"$model" 1
+
+	"Proxies"
+	{
+    "TextureScroll"
+		{
+			"texturescrollvar" "$basetexturetransform"
+			"texturescrollrate" 1
+			"texturescrollangle" 180
+		}
+	}
+	
+}

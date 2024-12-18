@@ -1,0 +1,40 @@
+"canyon1.outdoor"
+{
+	"dsp"	"1"
+
+	"playlooping"
+	{
+		"pitch"        "100"
+		"volume"	"1.0"
+		"wave"		"ctf/nature/treewind4.wav"
+	}
+
+	"playrandom"
+	{
+		"time"		"8,30"
+		"volume"	"0.4,0.8"
+		"pitch"		"90,115"
+		"soundlevel"	"SNDLVL_140db"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"	"ctf/nature/chicka2.wav"
+			"wave"	"ctf/nature/dist_birds1.wav"
+			"wave"	"ctf/nature/flit1.wav"
+		}
+	}
+
+	"playrandom"
+	{
+		"time"		"4,16"
+		"volume"	"0.4,0.9"
+		"pitch"		"90,115"
+		"soundlevel"	"SNDLVL_140db"
+		"position"	"random"
+		"rndwave"
+		{
+			"wave"	"ctf/nature/crik1.wav"
+			"wave"	"ctf/nature/squeek2.wav"
+		}
+	}
+}

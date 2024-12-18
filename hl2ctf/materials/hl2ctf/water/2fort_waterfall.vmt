@@ -1,0 +1,21 @@
+"UnlitGeneric"
+{
+	"$basetexture" "hl2ctf/water/2fort_waterfall_top"
+	"$translucent" 1
+	"$nocull" 1
+	"$alpha" 1
+	"$nofog" 1
+	"$additive" 1
+	"$nodecal" 1
+	
+	"Proxies"
+	{
+	           
+    "TextureScroll"
+		{
+			"texturescrollvar" "$basetexturetransform"
+			"texturescrollrate" .1
+			"texturescrollangle" 270
+		}
+	}
+}

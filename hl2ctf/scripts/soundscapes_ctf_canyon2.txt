@@ -1,0 +1,21 @@
+"canyon2.outdoor" 
+{ 
+         "dsp"   "1" 
+         "playlooping" 
+         { 
+                "volume"       "0.7" 
+                "pitch"        "100" 
+                "wave"         "canyon2/rain_loop.wav" 
+         } 
+}
+
+"canyon2.indoor" 
+{ 
+         "dsp"   "1" 
+         "playlooping" 
+         { 
+                "volume"       "1.0" 
+                "pitch"        "100" 
+                "wave"         "canyon2/rain_indoor_loop.wav" 
+         } 
+}

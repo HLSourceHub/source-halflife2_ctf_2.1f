@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/items/box_oicw"
+	"$bumpmap" "models/items/box_oicw_normal"
+	"$normalmapalphaenvmapmask" 1
+	"$nodecal" 1
+	"$model" 1
+}

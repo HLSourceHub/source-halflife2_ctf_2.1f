@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	// CTF Toro Gorge Rocket
+	"$baseTexture" "models/props_ctf/toro_rocket"
+	"$envmapmask" "models/props_ctf/toro_rocket_env"
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "metal"
+	"$model" 1
+}

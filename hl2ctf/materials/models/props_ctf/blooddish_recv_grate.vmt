@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	// XXX Blood Dish Receiver Grate
+	"$baseTexture" "models/props_ctf/blooddish_recv_grate"
+	"$surfaceprop" "metalgrate"
+	"$translucent" "1"
+	"$nocull" 1
+	"$model" 1
+}

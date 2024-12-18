@@ -1,0 +1,11 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "hl2ctf/blends/blend_stone_lt"
+	"$basetexture2" "hl2ctf/blends/blend_stone_dk"
+  "$basetexturetransform" "center .5 .5 scale 1 1 rotate 0 translate 0 0"
+  "$basetexturetransform2" "center .5 .5 scale 1 1 rotate 0 translate 0 0"
+  "$surfaceprop" "dirt"
+  "$surfaceprop2" "dirt"
+	"%tooltexture" "hl2ctf/blends/blend_stoneblend_tooltexture"
+	"%keywords" "hl2ctf"
+}

@@ -1,0 +1,9 @@
+"Unlittwotexture"
+{
+	// Original shader: VertexLitTexture
+	"$baseTexture" "models\weapons\vw_smg1\glass"
+	"$texture2"	"models\weapons\vw_smg1\noise"
+	"$selfillum" "1"
+	"$additive" 1
+	"$model" 1
+}

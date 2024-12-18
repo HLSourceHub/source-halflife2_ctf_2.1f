@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	// Decal
+	"$baseTexture" "hl2ctf/thegreatwall/decal_symbol1r"
+	"$translucent" 1
+	"$decal" 1
+	"$decalscale" 0.125
+	"%keywords" "hl2ctf"
+}

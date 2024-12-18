@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "hl2ctf/prisonriot/tilefloor001c_3"
+	"$decal" 1
+	"$decalscale" .25
+}

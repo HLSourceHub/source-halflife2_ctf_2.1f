@@ -1,0 +1,76 @@
+"Refract"
+{
+  "$model" "1"
+  "$nodecal" "1"
+  "$bluramount" "1"
+  "$surfaceprop" "water"
+  "$refractamount" ".05"
+  "$scale" "[1 1]"
+  "$normalmap" "hl2ctf/water/underwater_glass_normal"
+  "$dudvmap" "hl2ctf/water/underwater_glass_dudv"
+  "$REFRACTTINTTEXTURE" "hl2ctf/water/underwater_glass"
+  "%tooltexture" "hl2ctf/water/ctf_underwater_glass"
+
+  "Proxies"
+  {
+    "TextureScroll"
+    {
+      "texturescrollvar" "$bumptransform"
+      "texturescrollrate" .08
+      "texturescrollangle" -45
+    }
+  }
+
+  "Refract_dx90"
+  {
+    "$refractamount" "0.05"
+  }
+
+  "Refract_DX80"
+  {
+    "$refractamount" ".025"
+    "$refracttinttexture" "hl2ctf/water/underwater_glass"
+
+    "Proxies"
+    {
+      "TextureScroll"
+      {
+        "texturescrollvar" "$bumptransform"
+        "texturescrollrate" .08
+        "texturescrollangle" -45
+      }
+    }
+  }
+
+  "UnlitGeneric_dx8"
+  {
+    "$basetexture" "hl2ctf/water/underwater_glass"
+
+    "Proxies"
+    {
+      "Sine"
+      {
+        "resultVar"    "$alpha"
+        "sineperiod"   15
+        "sinemin"      0.1
+        "sinemax"      0.1
+      }
+    }
+
+    "UnlitGeneric_dx6"
+    {
+      "$basetexture" "hl2ctf/water/underwater_glass"
+
+      "Proxies"
+      {
+        "Sine"
+        {
+          "resultVar"    "$alpha"
+          "sineperiod"   15
+          "sinemin"      0.1
+          "sinemax"      0.1
+        }
+      }
+    }
+  }
+}

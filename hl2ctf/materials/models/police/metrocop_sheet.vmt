@@ -1,0 +1,6 @@
+// HL2CTF Metro Cop
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/police/metrocop_sheet"
+	"$selfillum" 1
+}

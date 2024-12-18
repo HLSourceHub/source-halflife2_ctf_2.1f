@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	// Prop Flag: Combine
+	"$baseTexture" "models/flag/flagcloth_prop_c"
+	"$surfaceprop" "metal"
+	"$selfillum" 1
+	"$nodecal" 1
+	"$nocull" 1
+	"$model" 1
+}

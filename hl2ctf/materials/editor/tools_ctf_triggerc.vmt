@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	// CTF Tool Texture Trigger Combine
+	"$translucent" 1
+	"$basetexture" "editor/tools_ctf_triggerc"
+	"%compiletrigger" 1
+	"%keywords" "hl2ctf,tool"
+}

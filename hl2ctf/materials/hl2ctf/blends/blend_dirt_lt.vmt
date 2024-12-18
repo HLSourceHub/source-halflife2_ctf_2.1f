@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "hl2ctf/blends/blend_dirt_lt"
+	"$surfaceprop" "dirt"
+	"%keywords" "hl2ctf"
+}

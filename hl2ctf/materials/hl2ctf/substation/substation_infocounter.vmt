@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "hl2ctf/substation/substation_infocounter"
+	"$decal" 1
+	"$decalscale" "0.25"
+}

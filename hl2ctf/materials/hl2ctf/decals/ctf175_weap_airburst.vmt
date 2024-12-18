@@ -1,0 +1,8 @@
+"lightmappedgeneric"
+{
+	"$baseTexture" "hl2ctf/decals/ctf175_weap_airburst"
+	"$translucent" 1
+	"$decal" 1
+	"$decalscale" "0.25"
+	"%keywords" "hl2ctf"
+}

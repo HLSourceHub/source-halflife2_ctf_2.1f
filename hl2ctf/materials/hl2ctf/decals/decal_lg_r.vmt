@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	// Large Rebel Decal
+	"$baseTexture" "hl2ctf/decals/decal_lg_r"
+	"$translucent" 1
+	"$decal" 1
+	"$decalscale" "0.125"
+	"%keywords" "hl2ctf"
+}

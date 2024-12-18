@@ -1,0 +1,36 @@
+"GameInfo"
+{
+	game		"Half-Life 2: Capture the Flag 2.1"
+
+	title		"HALF-LIFE'"
+	title2		"capture the flag"
+
+	developer	"the HL2:CTF team"
+	developer_url	"http://www.hl2ctf.com"
+	icon		"resource/hl2ctfs"
+
+	type		multiplayer_only
+	nomodels	0
+	nohimodel	1
+	nocrosshair	1
+
+	hidden_maps
+	{
+		"test_speakers"		1
+		"test_hardware"		1
+	}
+
+
+	FileSystem
+	{
+		SteamAppId				215
+		ToolsAppId				211
+
+		SearchPaths
+		{
+			Game				|gameinfo_path|.
+			Game				hl2mp
+			Game				hl2
+		}
+	}
+}

@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	// Orange Spark: White->Orange->Red Bits
+	"$basetexture" "effects/spark"
+	"$brightness" "effects/spark_brightness"
+	"$additive" 1
+	"$vertexcolor" 1
+}

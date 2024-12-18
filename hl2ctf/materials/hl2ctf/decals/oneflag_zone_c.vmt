@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "hl2ctf/decals/oneflag_zone_c"
+	"$translucent" 1
+	"$decal" 1
+	"$decalscale" "0.5"
+	"%keywords" "hl2ctf"
+}

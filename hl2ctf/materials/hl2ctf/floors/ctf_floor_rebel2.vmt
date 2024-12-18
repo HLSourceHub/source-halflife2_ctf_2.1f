@@ -1,0 +1,11 @@
+"LightMappedGeneric"
+{
+	"$baseTexture" "hl2ctf/floors/ctf_floor_rebel2"
+	"$bumpmap" "hl2ctf/floors/ctf_floor_combine_normal"
+	"$surfaceprop" "tile"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.55 .55 .55]"
+	"$normalmapalphaenvmapmask" 1	
+	"$envmapcontrast" 1
+	"%keywords" "hl2ctf"
+}

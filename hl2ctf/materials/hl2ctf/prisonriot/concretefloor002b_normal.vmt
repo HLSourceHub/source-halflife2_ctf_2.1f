@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	// Original shader: BaseTimesLightmap
+	"$basetexture" "Concrete/concretefloor002b"
+	"$surfaceprop" "concrete"
+	"%keywords" "c17downtown"
+	"$bumpmap" "hl2ctf/prisonriot/concretefloor002b_normal"
+}

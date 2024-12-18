@@ -1,0 +1,7 @@
+"sky"
+{
+	"$basetexture" "skybox/sky_stormedrt"
+	"$nofog" 1
+	"$ignorez" 1
+	"%keywords" "hl2ctf"
+}

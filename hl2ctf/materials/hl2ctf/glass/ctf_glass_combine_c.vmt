@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "hl2ctf/glass/ctf_glass_combine_c"
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "glass"
+	"$envmapmask" "hl2ctf/glass/ctf_glass_combine_mask"
+	"$translucent" 1
+	"$envmapcontrast" 1
+	"$envmapsaturation" 1
+	"$envmaptint" "[ .5 .5 .75]"
+	"%keywords" "hl2ctf"
+}

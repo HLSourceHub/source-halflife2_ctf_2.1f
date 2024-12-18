@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	// Capture Point Monitor Frame
+	"$baseTexture" "models/props_ctf/cp_mon_frame"
+	"$envmapmask" "models/props_ctf/cp_mon_frame_mask"
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "metal"
+	"$nodecal" 1
+	"$model" 1
+}

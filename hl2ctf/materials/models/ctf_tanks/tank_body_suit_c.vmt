@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\ctf_tanks\tank_body_suit_c"
+	"$selfillum" "1"
+	"$nodecal" "1"
+	"$model" "1"
+	"Proxies"
+	{
+		"Sine"
+		{
+			"resultVar" "$selfIllumTint"
+			"sinemin" 0.25
+			"sinemax" 1.00
+			"sineperiod" 1.0
+		}
+	}
+}

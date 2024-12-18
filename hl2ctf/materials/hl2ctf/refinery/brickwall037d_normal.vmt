@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "Brick/brickwall037d"
+	"$surfaceprop" "brick"
+	"$bumpmap" "hl2ctf/refinery/brickwall037d_normal"
+}

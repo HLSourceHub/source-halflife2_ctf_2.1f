@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	// Cold Storage Black (Scaled Overlay)
+	"$baseTexture" "hl2ctf/decals/ctf_cold_b"
+	"$translucent" 1
+	"$decal" 1
+	"$decalscale" "0.5"
+	"%keywords" "hl2ctf"
+}

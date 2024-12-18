@@ -1,0 +1,7 @@
+// CTF Disabled Suit Charger
+"VertexLitGeneric"
+{
+	"$basetexture" "Models/props_combine/suit_charger00x_sheet"
+	"$surfaceprop" "metal"
+	// "$selfillum" "1"
+}

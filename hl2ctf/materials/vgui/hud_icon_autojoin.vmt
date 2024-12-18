@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+      "$basetexture" "vgui/hud_icon_autojoin"
+      "$translucent"   "1"
+      "$ignorez" "1"
+}

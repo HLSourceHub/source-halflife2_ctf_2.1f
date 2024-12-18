@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	// CTF Toro Gorge Satelite Dish
+	"$baseTexture" "models/props_ctf/sat_dish"
+	"$surfaceprop" "metal"
+	"$model" 1
+}

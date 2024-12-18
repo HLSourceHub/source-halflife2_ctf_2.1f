@@ -1,0 +1,7 @@
+"DecalBaseTimesLightmapAlphaBlendSelfIllum"
+{
+	"$basetexture" "hl2ctf/thegreatwall/decalporthole_sm"
+	"$selfillumtexture" "hl2ctf/thegreatwall/decalporthole_sm_mask"
+	"$decalscale" 0.25
+	"%keywords" "borealis"
+}

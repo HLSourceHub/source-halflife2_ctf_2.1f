@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "hl2ctf/substation/substation_car_cl"
+	"$bumpmap" "hl2ctf/substation/substation_car_cl_normal"
+	"$surfaceprop" "metal"
+}

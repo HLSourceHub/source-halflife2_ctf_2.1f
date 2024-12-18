@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "hl2ctf/metals/ctf_metal_track_c"
+	"$surfaceprop" "metal"
+  "%keywords" "hl2ctf"
+}

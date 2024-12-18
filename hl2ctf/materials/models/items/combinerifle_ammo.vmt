@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models/items/combinerifle_ammo"
+	"$surfaceprop"	"default"
+	"$selfillum" 1
+	"$bumpmap"	"models/items/combinerifle_ammo_normal"
+	"$model" "1"
+}

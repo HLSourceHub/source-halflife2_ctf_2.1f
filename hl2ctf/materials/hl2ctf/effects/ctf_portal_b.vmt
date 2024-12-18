@@ -1,0 +1,18 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "hl2ctf/effects/ctf_portal_b"
+	"$selfillum" 1
+	"$nodecal" 1
+	"$surfaceprop" "water"
+	"%keywords" "hl2ctf"
+
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$basetexture"
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 20
+		}
+	}
+}

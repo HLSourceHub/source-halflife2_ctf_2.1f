@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	// XXX Blood Dish Platform
+	"$baseTexture" "models/props_ctf/blooddish_plat"
+	"$surfaceprop" "concrete"
+	"$model" 1
+}

@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "hl2ctf/floors/ctf_metalfloor_coarse_r"
+	"$bumpmap" "hl2ctf/floors/ctf_metalfloor_coarse_normal"
+	"$surfaceprop" "metal"
+	"%keywords" "hl2ctf"
+}

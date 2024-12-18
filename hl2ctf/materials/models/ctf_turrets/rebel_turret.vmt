@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	// CTF Rebel Turret
+	"$basetexture" "models/ctf_turrets/rebel_turret"
+	"$surfaceprop" "metal"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[ .5 .5 .5]"
+	"$envmapmask" "models/ctf_turrets/rebel_turret_mask"
+	"$selfillum" 1
+}

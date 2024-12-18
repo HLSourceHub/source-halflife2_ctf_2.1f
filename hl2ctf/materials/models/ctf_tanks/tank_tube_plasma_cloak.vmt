@@ -1,0 +1,27 @@
+"Refract"
+{
+	"Refract_dx60"
+	{
+		"$fallbackmaterial" "models\ctf_tanks\tank_tube_plasma_cloak_dx8"
+	}
+	"$refractamount" "0.5"
+	"$dudvmap" "dev/water_dudv"
+	"$normalmap" "models/effects/predator_ice"
+	"$normalmapalphaenvmapmask" 1
+	"$surfaceprop" "flesh"
+	"$translucent" 1
+	"$bumpframe" 0
+	"$nodecal" 1
+	"$nofog" 1
+	"$model" 1
+
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$bumptransform"
+			"texturescrollrate" 1
+			"texturescrollangle" 45
+		}
+	}
+}

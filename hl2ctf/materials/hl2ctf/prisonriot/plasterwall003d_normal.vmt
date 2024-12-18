@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "Plaster/plasterwall003d"
+	"$surfaceprop" "plaster"
+	"%keywords" "c17downtown,wasteland"
+	"$bumpmap" "hl2ctf/prisonriot/plasterwall003d_normal"
+}

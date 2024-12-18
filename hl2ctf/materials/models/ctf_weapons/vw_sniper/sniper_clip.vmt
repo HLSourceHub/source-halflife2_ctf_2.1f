@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\ctf_weapons\vw_sniper\sniper_clip"
+	"$model" 1
+}

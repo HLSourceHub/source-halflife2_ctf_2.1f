@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "hl2ctf/decals/ctf_fb_endzone_c"
+	"$translucent" 1
+	"$decal" 1
+	"$decalscale" "0.5"
+	"%keywords" "hl2ctf"
+}

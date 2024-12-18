@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "hl2ctf/blends/gravelfloor"
+	"$surfaceprop" "ctf_gravel"
+}

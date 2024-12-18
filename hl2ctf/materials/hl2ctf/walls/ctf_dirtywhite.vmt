@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "hl2ctf/walls/ctf_dirtywhite"
+	"$surfaceprop" "plastic"
+	"%keywords" "hl2ctf"
+}

@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$translucent" 1
+	"$basetexture" "hl2ctf/prisonriot/decal_messhall"
+	"$decal" 1
+	"$decalscale" 0.125
+	"%keywords" "borealis"
+}

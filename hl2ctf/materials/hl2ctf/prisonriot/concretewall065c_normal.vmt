@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "Concrete/concretewall065c"
+	"$surfaceprop" "concrete"
+	"%keywords" "airexchange"
+	"$bumpmap" "hl2ctf/prisonriot/concretewall065c_normal"
+}

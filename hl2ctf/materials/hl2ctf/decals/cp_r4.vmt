@@ -1,0 +1,8 @@
+"lightmappedgeneric"
+{
+	"$baseTexture" "hl2ctf/decals/cp_r4"
+	"$translucent" 1
+	"$decal" 1
+	"$decalscale" "0.25"
+	"%keywords" "hl2ctf"
+}

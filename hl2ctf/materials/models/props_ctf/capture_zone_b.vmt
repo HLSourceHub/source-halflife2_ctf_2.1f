@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	// CTF Capture Zone (neutral)
+	"$baseTexture" "models/props_ctf/capture_zone_b"
+	"$envmapmask" "models/props_ctf/capture_zone_mask"
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "metal"
+	"$selfillum" 1
+	"$nodecal" 1
+	"$model" 1
+}

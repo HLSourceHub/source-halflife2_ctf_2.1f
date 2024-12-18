@@ -1,0 +1,11 @@
+"UnlitGeneric"
+{
+	// CTF Capture Point Doo-dad Faces Combine
+	"$baseTexture" "models/props_ctf/ctf_doodad_faces_c"
+  "$selfillum_envmapmask_alpha" 1
+  "$translucent" 1
+	"$nocull" 1
+	"$nodecal" 1
+	"$nofog" "1"
+	"$model" "1"
+}

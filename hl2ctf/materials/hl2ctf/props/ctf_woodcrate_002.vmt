@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "hl2ctf/props/ctf_woodcrate_002"
+	"$surfaceprop" "wood_panel"
+	"%keywords" "hl2ctf"
+}

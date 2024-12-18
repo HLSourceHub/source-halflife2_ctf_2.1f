@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	// Mega Battery Spinning Battery
+	"$baseTexture" "models/items/mega_battery_bat"
+	"$surfaceprop" "plastic"
+	"$selfillum" 1
+	"$nodecal" 1
+	"$model" 1
+
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$basetexturetransform"
+			"texturescrollrate" 2
+			"texturescrollangle" 0
+		}
+	}
+}

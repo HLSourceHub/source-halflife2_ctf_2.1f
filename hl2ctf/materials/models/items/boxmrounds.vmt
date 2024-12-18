@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	// Custom BoxMRounds (SMG Ammo)
+	"$basetexture" "models/items/boxmrounds"
+ 	"$bumpmap" "models/items/boxmrounds_normal"
+}

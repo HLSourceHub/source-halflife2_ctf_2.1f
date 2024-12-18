@@ -1,0 +1,17 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "sprites\ctf_holozone_c"
+	"$translucent" 1
+	"$additive" 1
+	"%keywords" "hl2ctf"
+
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$basetexture" 
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 10
+		}
+	}
+}

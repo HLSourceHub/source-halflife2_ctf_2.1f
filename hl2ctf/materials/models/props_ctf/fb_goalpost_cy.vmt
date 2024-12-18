@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	// Football: Combine Goal Post (yellow uprights)
+	"$basetexture" "models/props_ctf/fb_goalpost_cy"
+	"$model" "1"
+}

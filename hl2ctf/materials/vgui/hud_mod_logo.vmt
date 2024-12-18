@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+      "$basetexture" "vgui/hud_mod_logo"
+      "$translucent"   "1"
+      "$ignorez" "1"
+}

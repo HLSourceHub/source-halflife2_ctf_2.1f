@@ -1,0 +1,11 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "hl2ctf/blends/grassfloor"
+	"$basetexture2" "hl2ctf/blends/gravelfloor"
+  "$basetexturetransform" "center .5 .5 scale 1 1 rotate 0 translate 0 0"
+  "$basetexturetransform2" "center .5 .5 scale 1 1 rotate 0 translate 0 0"
+	"$surfaceprop" "grass"
+	"$surfaceprop2" "ctf_gravel"
+	"%tooltexture" "hl2ctf/blends/blendgrassgravelctf_tooltexture"
+	"%keywords" "hl2ctf"
+}

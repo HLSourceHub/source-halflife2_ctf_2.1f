@@ -1,0 +1,7 @@
+"LightMappedGeneric"
+{
+	"$baseTexture" "hl2ctf\walls\ctf_illum_w"
+	"$selfillum" 1
+	"$surfaceprop" "plastic"
+	"%keywords" "hl2ctf"
+}

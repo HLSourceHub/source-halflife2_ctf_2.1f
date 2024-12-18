@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	// Rebel Flag
+	"$baseTexture" "models/flag/flagpole_r"
+	"$envmapmask" "models/flag/flagpole_mask"
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "metal"
+	"$nodecal" 1
+	"$model" 1
+}

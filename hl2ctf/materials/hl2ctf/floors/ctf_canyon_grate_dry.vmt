@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "hl2ctf/floors/ctf_canyon_grate_dry"
+	"$surfaceprop" "metalgrate"
+	"$alphatest" 1
+	"%compilepassbullets" 1
+	"%keywords" "hl2ctf"
+}

@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	// Banner: Combine Dirty
+	"$basetexture" "models/props_ctf/ctf_banner_large02c"
+	"$nodecal" "1"
+	"$nocull" "1"
+	"$model" "1"
+}

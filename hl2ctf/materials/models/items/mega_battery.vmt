@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	// Mega Battery (battery_large.mdl)
+	"$baseTexture" "models/items/mega_battery"
+	"$surfaceprop" "plastic"
+	"$selfillum" 1
+	"$nodecal" 1
+	"$model" 1
+}

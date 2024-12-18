@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	// CTF Tool Texture Rune Barrier (vphys clip filter)
+	"$translucent" 1
+	"$basetexture" "editor/tools_ctf_barrierrune"
+	"%compiletrigger" 1
+	"%keywords" "hl2ctf,tool"
+}

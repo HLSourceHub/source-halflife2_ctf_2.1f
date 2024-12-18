@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	// CTF Tower Segment RED
+	"$baseTexture" "models/props_ctf/tower_r"
+	"$surfaceprop" "metal"
+	"$model" 1
+}

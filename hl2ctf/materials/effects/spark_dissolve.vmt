@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	// Combine Ball Death Spark
+	"$basetexture" "effects/spark_dissolve"
+	"$brightness" "effects/spark_brightness"
+	"$additive" 1
+	"$vertexcolor" 1
+}

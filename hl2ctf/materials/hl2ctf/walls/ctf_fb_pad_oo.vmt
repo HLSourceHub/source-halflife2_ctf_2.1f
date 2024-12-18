@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "hl2ctf/walls/ctf_fb_pad_oo"
+	"$surfaceprop" "flesh_noblood"
+	"%keywords" "hl2ctf"
+}

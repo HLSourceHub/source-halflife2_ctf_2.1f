@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/ctf_gibs/gibs_metrocop_sheet"
+	"$surfaceprop" "flesh"
+	"$nodecal" 1
+	"$model" 1
+}

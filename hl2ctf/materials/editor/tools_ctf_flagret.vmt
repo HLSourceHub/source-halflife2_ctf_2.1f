@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	// CTF Tool Texture Flag Return
+	"$translucent" 1
+	"$basetexture" "editor/tools_ctf_flagret"
+	"%compiletrigger" 1
+	"%keywords" "hl2ctf,tool"
+}

@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/ctf_weapons/v_oicw/v_oicw"
+	"$envmapmask" "models/ctf_weapons/v_oicw/v_oicw_mask"
+	"$envmap" "env_cubemap"
+	"$model" 1
+}

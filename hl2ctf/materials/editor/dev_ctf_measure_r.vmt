@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	// CTF Dev Measure Rebel
+	"$basetexture" "editor/dev_ctf_measure_r"
+	"$surfaceprop" "concrete"
+}

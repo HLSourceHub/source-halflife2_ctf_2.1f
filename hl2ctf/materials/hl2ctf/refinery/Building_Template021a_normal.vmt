@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "Building_Template\Building_Template021a"
+	"$surfaceprop" "concrete"
+	"$bumpmap" "hl2ctf/refinery/Building_Template021a_normal"
+}

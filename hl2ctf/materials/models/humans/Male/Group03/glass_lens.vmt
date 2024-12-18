@@ -1,0 +1,19 @@
+"Unlittwotexture"
+{
+	"additive" "1"
+	"$basetexture" "models/humans/male/group03/glass_lens"
+	"$texture2" "models/humans/male/group03/lens_noise"
+	"$selfillum" "1"
+	"$envmap" "env_cubemap"
+	"$envmapcontrast" "1"
+	"$model" "1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$texture2transform"
+			"texturescrollrate" 10
+			"texturescrollangle" 0
+		}
+	}
+}

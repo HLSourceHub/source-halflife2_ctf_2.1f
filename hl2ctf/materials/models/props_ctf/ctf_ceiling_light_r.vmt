@@ -1,0 +1,8 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\props_ctf\ctf_ceiling_light_r"
+	"$selfillum" "1"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "models\props_ctf\ctf_ceiling_light_ref"
+	"$nodecal" "1"
+}

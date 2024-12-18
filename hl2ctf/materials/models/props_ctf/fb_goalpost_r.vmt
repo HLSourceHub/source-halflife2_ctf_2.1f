@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	// Football: Rebel Goal Post
+	"$basetexture" "models/props_ctf/fb_goalpost_r"
+	"$model" "1"
+}

@@ -1,0 +1,350 @@
+"sprites/640_hud"
+{
+	TextureData
+	{
+
+		// -- Obituary Icons --
+
+		"death_357"
+		{
+				"font"		"HL2MPTypeDeath"
+				"character"	"."
+		}
+		"death_ar2"
+		{
+				"font"		"HL2MPTypeDeath"
+				"character"	"2"
+		}
+		"death_crossbow_bolt"
+		{
+				"font"		"HL2MPTypeDeath"
+				"character"	"1"
+		}
+		"death_smg1"
+		{
+				"font"		"HL2CTFTypeDeath"
+				"character"	"v"
+		}
+		"death_shotgun"
+		{
+				"font"		"HL2MPTypeDeath"
+				"character"	"0"
+		}
+		"death_rpg_missile"
+		{
+				"font"		"HL2MPTypeDeath"
+				"character"	"3"
+		}
+		"death_grenade_frag"
+		{
+				"font"		"HL2MPTypeDeath"
+				"character"	"4"
+		}
+		"death_pistol"
+		{
+				"font"		"HL2MPTypeDeath"
+				"character"	"-"
+		}
+		"death_physics"
+		{
+				"font"		"HL2MPTypeDeath"
+				"character"	"9"
+		}
+		"death_combine_ball"
+		{
+				"font"		"HL2MPTypeDeath"
+				"character"	"8"
+		}
+		"death_smg1_grenade"
+		{
+				"font"		"HL2MPTypeDeath"
+				"character"	"7"
+		}
+		"death_stunstick"
+		{
+				"font"		"HL2MPTypeDeath"
+				"character"	"!"
+		}
+		"death_slam"
+		{
+				"font"		"HL2MPTypeDeath"
+				"character"	"*"
+		}
+		"death_crowbar"
+		{
+				"font"		"HL2MPTypeDeath"
+				"character"	"6"
+		}
+
+		// -- Half-Life 2: Capture the Flag Obituary Icons --
+
+		"death_generic"
+		{
+				"font"		"HL2CTFTypeDeath"
+				"character"	"y"
+		}
+		"death_ctf_rebel_turret"
+		{
+				"font"		"HL2CTFTypeDeath"
+				"character"	"X"
+		}
+		"death_ctf_combine_turret"
+		{
+				"font"		"HL2CTFTypeDeath"
+				"character"	"X"
+		}
+		"death_ctf_alyxgun"
+		{
+				"font"		"HL2CTFTypeDeath"
+				"character"	"W"
+		}
+		"death_ctf_sniper"
+		{
+				"font"		"HL2CTFTypeDeath"
+				"character"	"z"
+		}
+		"death_ctf_oicw"
+		{
+				"font"		"HL2CTFTypeDeath"
+				"character"	"Z"
+		}
+		"death_grenade_ctf_oicw_airburst"
+		{
+				"font"		"HL2CTFTypeDeath"
+				"character"	"m"
+		}
+		"death_Railgun_bolt"
+		{
+				"font"		"HL2CTFTypeDeath"
+				"character"	">"
+		}
+
+		// -- Half-LIfe 2: Capture the Flag Headshot Icons --
+
+		"headshot_combine"
+		{
+				"font"		"HL2CTFTypeDeath"
+				"character"	"^"
+		}
+		"headshot_rebel"
+		{
+				"font"		"HL2CTFTypeDeath"
+				"character"	"#"
+		}
+
+		// -- Voice Icons --
+
+		"voice_player"
+		{
+				"file"		"voice/icntlk_sv"
+				"x"		"0"
+				"y"		"0"
+				"width"		"32"
+				"height"	"32"
+		}
+		"voice_self"
+		{
+				"file"		"voice/icntlk_local"
+				"x"		"0"
+				"y"		"0"
+				"width"		"32"
+				"height"	"32"
+		}
+
+		
+
+		// -- HL2CTF : Deathmatch Status Icons --
+
+
+		"RebelIconDeathmatch"
+		{
+			"font"		"HL2CTFScoreIcon"
+			"character"	"g"
+		}
+		"RebelFrag"
+		{
+			"font"		"HL2CTFScoreIcon"
+			"character"	"h"
+		}
+		"CombineIconDeathmatch"
+		{
+			"font"		"HL2CTFScoreIcon"
+			"character"	"i"
+		}
+		"CombineFrag"
+		{
+			"font"		"HL2CTFScoreIcon"
+			"character"	"j"
+		}	
+
+
+		// -- HL2CTF: Flag Status Icons --
+
+		"CombinDropped"
+		{
+			"font"		"HL2CTFScoreIcon"
+			"character"	"@"
+		}
+		"CombineCarried"
+		{
+			"font"		"HL2CTFScoreIcon"
+			"character"	"#"
+		}
+		"RebelDropped"
+		{
+			"font"		"HL2CTFScoreIcon"
+			"character"	"%"
+		}
+		"RebelCarriedr"
+		{
+			"font"		"HL2CTFScoreIcon"
+			"character"	"^"
+		}
+
+		// -- HL2CTF: "You have the flag" Icons --
+
+		"RebelFlagCarriedIcon"
+		{
+			"font"		"HL2CTFNotifyIcons"
+			"character"	"&"
+		}
+		"CombineFlagCarriedIcon"
+		{
+			"font"		"HL2CTFNotifyIcons"
+			"character"	"*"
+		}
+		"OneFlagCarriedIcon"
+		{
+			"font"		"HL2CTFNotifyIcons"
+			"character"	"("
+		}
+		"FootballCarriedIcon"
+		{
+			"font"		"HL2CTFNotifyIcons"
+			"character"	"8"
+		}
+ 
+		// -- HL2CTF Powerup Icons --
+
+		"DoubleDamageIcon"
+		{
+			"font"		"HL2CTFNotifyIcons"
+			"character"	"M"
+		}
+		"CloakIcon"
+		{
+			"font"		"HL2CTFNotifyIcons"
+			"character"	"N"
+		}
+		"ShieldIcon"
+		{
+			"font"		"HL2CTFNotifyIcons"
+			"character"	"O"
+		}
+		"RegenIcon"
+		{
+			"font"		"HL2CTFNotifyIcons"
+			"character"	"P"
+		}
+		"VampireIcon"
+		{
+			"font"		"HL2CTFNotifyIcons"
+			"character"	"Q"
+		}
+		"IronLungIcon"
+		{
+			"font"		"HL2CTFNotifyIcons"
+			"character"	"R"
+		}
+		"HasteIcon"
+		{
+			"font"		"HL2CTFNotifyIcons"
+			"character"	"S"
+		}
+
+		// -- HL2CTF Award Icons --
+
+		"AssistAwardIcon"
+		{
+			"font"		"HL2CTFNotifyIcons"
+			"character"	"1"
+		}
+		"CaptureAwardIcon"
+		{
+			"font"		"HL2CTFNotifyIcons"
+			"character"	"2"
+		}
+		"CarrierAwardIcon"
+		{
+			"font"		"HL2CTFNotifyIcons"
+			"character"	"3"
+		}
+		"DefendAwardIcon"
+		{
+			"font"		"HL2CTFNotifyIcons"
+			"character"	"4"
+		}
+		"ProtectAwardIcon"
+		{
+			"font"		"HL2CTFNotifyIcons"
+			"character"	"5"
+		}
+		"ReturnAwardIcon"
+		{
+			"font"		"HL2CTFNotifyIcons"
+			"character"	"6"
+		}
+		"DominateAwardIcon"
+		{
+			"font"		"HL2CTFNotifyIcons"
+			"character"	"7"
+		}
+
+		// -- HL2CTF Warmup / Ready Icons --
+
+		"ReadyIcon"
+		{
+			"font"		"HL2CTFNotifyIcons2"
+			"character"	"a"
+		}
+		"ReadyWaiting"
+		{
+			"font"		"HL2CTFNotifyIcons2"
+			"character"	"e"
+		}
+		"WarmupIcon"
+		{
+			"font"		"HL2CTFNotifyIcons2"
+			"character"	"c"
+		}
+		"OvertimeIcon"
+		{
+			"font"		"HL2CTFNotifyIcons2"
+			"character"	"f"
+		}
+
+		// -- HL2CTF Team Icons --
+
+		"SwitchTeams"
+		{
+			"font"		"HL2CTFNotifyIcons2"
+			"character"	"A"
+		}
+		"Rebels"
+		{
+			"font"		"HL2CTFNotifyIcons2"
+			"character"	"B"
+		}
+		"Combine"
+		{
+			"font"		"HL2CTFNotifyIcons2"
+			"character"	"C"
+		}
+		"Spectators"
+		{
+			"font"		"HL2CTFNotifyIcons2"
+			"character"	"D"
+		}
+
+	}	
+}

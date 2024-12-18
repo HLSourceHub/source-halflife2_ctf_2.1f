@@ -1,0 +1,14 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/loading_screen_map"
+	
+		"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$basetexture" 
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 15
+		}
+	}
+}

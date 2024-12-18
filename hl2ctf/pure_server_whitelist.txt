@@ -1,0 +1,136 @@
+whitelist
+{
+  // Half-Life 2: Capture the Flag 2.0 White List
+  // *Only works with sv_pure 1
+  //
+  // 3 modifiers are allowed on file specifications:
+  //
+  // from_steam       - only check the Steam cache for the file (ignore anything on disk)
+  // allow_from_disk  - allow the file to come from disk
+  // check_crc        - used with allow_from_disk - server does CRC checks on the client's file to make sure it matches
+  //
+  // The default modifier on all files is allow_from_disk. Thus, all files can come from disk and don't need CRC checks unless
+  // allow_from_disk can be set at the same time as check_crc. Use the + character in between them to signify this: allow_from_disk+check_crc.
+  //
+  // Three types of file specifications:
+  //
+  // 1. directory/*.*       - refers to all files under the directory
+  // 2. directory/...       - refers to all files under the directory and all directories under that (recursively)
+  // 3. directory/filename  - refers to a single file
+  //   
+  // By default, when in pure server mode, most content file types are only allowed to come from Steam.
+  //
+  materials\...			from_steam
+  models\...			from_steam
+  sound\...			from_steam
+
+  // Allow custom player models. Don't do CRC checks on them because the clients may all
+  // have different custom models and the server won't have them all.
+  //	
+  // models\player\...			allow_from_disk
+  // materials\models\player\...	allow_from_disk
+
+  //
+  // Allow custom spray decals
+  //
+  materials\temp\...			allow_from_disk
+  materials\vgui\logos\...	allow_from_disk
+  materials\vgui\logos\ui\...	allow_from_disk
+
+  //
+  // Allow most Materials other than Player and Flag Model Materials
+  //
+  materials\cable\...                 allow_from_disk
+  materials\console\...               allow_from_disk
+  materials\decals\...                allow_from_disk
+  materials\editor\...                allow_from_disk
+  materials\effects\...               allow_from_disk
+  materials\hl2ctf\...                allow_from_disk
+  materials\models\...                allow_from_disk
+  materials\models\ctf_gibs\*.*       allow_from_disk
+  materials\models\ctf_tanks\*.*      allow_from_disk
+  materials\models\ctf_turrets\...    allow_from_disk
+  materials\models\ctf_weapons\...    allow_from_disk
+  materials\models\effects\*.*        allow_from_disk+check_crc
+  materials\models\flag\...           allow_from_disk+check_crc
+  materials\models\healthvial\*.*     allow_from_disk
+  materials\models\humans\...         allow_from_disk
+  materials\models\humans\male\Group03\hevsuit_sheet_01.vmt   allow_from_disk+check_crc
+  materials\models\humans\male\Group03\hevsuit_sheet_02.vmt   allow_from_disk+check_crc
+  materials\models\humans\male\Group03\hevsuit_sheet_03.vmt   allow_from_disk+check_crc
+  materials\models\humans\male\Group03\hevsuit_sheet_04.vmt   allow_from_disk+check_crc
+  materials\models\humans\male\Group03\hevsuit_sheet_05.vmt   allow_from_disk+check_crc
+  materials\models\humans\male\Group03\hevsuit_sheet_01.vtf   allow_from_disk+check_crc
+  materials\models\humans\male\Group03\hevsuit_sheet_02.vtf   allow_from_disk+check_crc
+  materials\models\humans\male\Group03\hevsuit_sheet_03.vtf   allow_from_disk+check_crc
+  materials\models\humans\male\Group03\hevsuit_sheet_04.vtf   allow_from_disk+check_crc
+  materials\models\humans\male\Group03\hevsuit_sheet_05.vtf   allow_from_disk+check_crc
+  materials\models\humans\male\Group03\arm_sheet_01.vmt       allow_from_disk+check_crc
+  materials\models\humans\male\Group03\arm_sheet_02.vmt       allow_from_disk+check_crc
+  materials\models\humans\male\Group03\arm_sheet_03.vmt       allow_from_disk+check_crc
+  materials\models\humans\male\Group03\arm_sheet_04.vmt       allow_from_disk+check_crc
+  materials\models\humans\male\Group03\arm_sheet_05.vmt       allow_from_disk+check_crc
+  materials\models\humans\male\Group03\arm_sheet_01.vtf       allow_from_disk+check_crc
+  materials\models\humans\male\Group03\arm_sheet_02.vtf       allow_from_disk+check_crc
+  materials\models\humans\male\Group03\arm_sheet_03.vtf       allow_from_disk+check_crc
+  materials\models\humans\male\Group03\arm_sheet_04.vtf       allow_from_disk+check_crc
+  materials\models\humans\male\Group03\arm_sheet_05.vtf       allow_from_disk+check_crc
+  materials\models\humans\male\Group03\glass_lens.vtf         allow_from_disk+check_crc
+  materials\models\humans\male\Group03\glass_lens.vmt         allow_from_disk+check_crc
+  materials\models\humans\male\Group03\glint.vtf              allow_from_disk+check_crc
+  materials\models\humans\male\Group03\glint.vmt              allow_from_disk+check_crc
+  materials\models\humans\male\Group03\goggle_sheet.vtf       allow_from_disk+check_crc
+  materials\models\humans\male\Group03\goggle_sheet.vmt       allow_from_disk+check_crc
+  materials\models\humans\male\Group03\clothes_underlay.vtf   allow_from_disk+check_crc
+  materials\models\humans\male\Group03\clothes_underlay.vmt   allow_from_disk+check_crc
+  materials\models\items\...            allow_from_disk
+  materials\models\police\...           allow_from_disk+check_crc
+  materials\models\props\...            allow_from_disk
+  materials\models\props_combine\...    allow_from_disk
+  materials\models\props_ctf\...        allow_from_disk
+  materials\models\props_wasteland\...  allow_from_disk
+  materials\models\weapons\...          allow_from_disk
+  materials\particle\...                allow_from_disk
+  materials\skybox\...                  allow_from_disk
+  materials\sprites\...                 allow_from_disk
+  materials\vgui\...                    allow_from_disk
+
+  //
+  // Allow most Models other than Flag Models
+  //
+  models\*.*                       allow_from_disk
+  models\police.mdl                allow_from_disk+check_crc
+  models\crossbow_bolt.mdl         allow_from_disk
+  models\ctf_gibs\*.*              allow_from_disk
+  models\ctf_tanks\*.*             allow_from_disk
+  models\ctf_turrets\*.*           allow_from_disk
+  models\ctf_weapons\...           allow_from_disk+check_crc
+  models\editor\*.*                allow_from_disk
+  models\flag\*.*                  allow_from_disk
+  models\flag\flag_combine.mdl     allow_from_disk+check_crc
+  models\flag\flag_football.mdl    allow_from_disk+check_crc
+  models\flag\flag_neutral.mdl     allow_from_disk+check_crc
+  models\flag\flag_rebel.mdl       allow_from_disk+check_crc
+  models\flag\v_flag_combine.mdl   allow_from_disk+check_crc
+  models\flag\v_flag_neutral.mdl   allow_from_disk+check_crc
+  models\flag\v_flag_rebel.mdl     allow_from_disk+check_crc
+  models\flag\v_football_flag.mdl  allow_from_disk+check_crc
+  models\humans\...                allow_from_disk
+  models\items\...                 allow_from_disk
+  models\player\*.*                allow_from_disk
+  models\props\*.*                 allow_from_disk
+  models\props_combine\*.*         allow_from_disk
+  models\props_ctf\*.*             allow_from_disk
+  models\props_wasteland\*.*       allow_from_disk
+  models\weapons\...               allow_from_disk
+
+  //
+  // Allow Map, Common and Weapon Sounds
+  //
+  sound\2fort\...                  allow_from_disk
+  sound\canyon2\...                allow_from_disk
+  sound\common\...                 allow_from_disk
+  sound\ctf\...                    allow_from_disk
+  sound\ctf_weapons\...            allow_from_disk
+  sound\weapons\...                allow_from_disk
+}

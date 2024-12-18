@@ -1,0 +1,15 @@
+"Refract"
+{
+	"Refract_DX60"
+	{
+		"$fallbackmaterial" "sprites/heatwavedx70"
+	}
+
+  "$dudvmap" "particle/sniper_halo_dudv"
+	"$normalmap" "particle/sniper_halo_normal"
+	"$refractamount" "0.50"
+	"$forcerefract" "1"
+	"$bluramount" "0.75"
+	"$nofog" "1"
+	"$model" "1"
+}

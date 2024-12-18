@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "hl2ctf/decals/logo_combine_flags"
+	"$translucent" 1
+	"$decal" 1
+	"$decalscale" "0.50"
+	"%keywords" "hl2ctf"
+}

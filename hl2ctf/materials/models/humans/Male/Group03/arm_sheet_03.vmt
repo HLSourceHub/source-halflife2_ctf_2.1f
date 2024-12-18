@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/humans/male/group03/arm_sheet_03"
+	"$halflambert" "1"
+	"$selfillum" "1"
+	"$model" "1"
+}

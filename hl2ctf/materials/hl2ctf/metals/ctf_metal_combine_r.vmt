@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "hl2ctf/metals/ctf_metal_combine_r"
+	"$surfaceprop" "metal"
+	"$bumpmap" "hl2ctf/metals/ctf_metal_combine_normal"
+	"$nodiffusebumplighting" 1
+	"$envmaptint" "[ .75 .67 .56 ]"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmapsaturation" 1
+  "%keywords" "hl2ctf"
+}

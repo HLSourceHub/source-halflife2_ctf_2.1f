@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	// XXX Blood Dish Receiver Body
+	"$baseTexture" "models/props_ctf/blooddish_recv_body"
+	"$surfaceprop" "metal"
+	"$model" 1
+}

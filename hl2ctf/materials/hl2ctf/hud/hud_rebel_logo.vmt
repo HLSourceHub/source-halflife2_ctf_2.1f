@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+      "$basetexture" "hl2ctf/hud/hud_rebel_logo"
+      "$translucent"   "1"
+      "$ignorez" "1"
+}

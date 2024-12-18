@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+    "$basetexture" "hl2ctf/decals/orangechev000"
+    "$decal" 1
+    "$translucent" 1
+    "$alpha" 0.7
+}

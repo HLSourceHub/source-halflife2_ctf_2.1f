@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	// Football Flag
+	"$baseTexture" "models/flag/football_skin"
+  "$envmapmask" "models/flag/football_skin_mask"
+  "$envmap" "env_cubemap"
+	"$surfaceprop" "metal"
+	"$selfillum" 1
+	"$nodecal" 1
+	"$model" 1
+}

@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "sprites\capture_zone_logo_c"
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+	"$additive" 1
+	"%keywords" "hl2ctf"
+}

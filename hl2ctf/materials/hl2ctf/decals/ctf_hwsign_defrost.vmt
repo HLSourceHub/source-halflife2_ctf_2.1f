@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "hl2ctf/decals/ctf_hwsign_defrost"
+	"$decal" 1
+	"$decalscale" "0.50"
+	"%keywords" "hl2ctf"
+}

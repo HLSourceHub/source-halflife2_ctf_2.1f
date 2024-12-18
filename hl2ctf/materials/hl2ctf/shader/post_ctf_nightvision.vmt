@@ -1,0 +1,5 @@
+"Post_CTF_NightVision"
+{
+	“$basetexture” “_rt_FullFrameFB”
+	"$nvlevel" 4 //can be whatever value you want
+}

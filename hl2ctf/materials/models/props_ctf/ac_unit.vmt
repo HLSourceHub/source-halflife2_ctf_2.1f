@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	// CTF Prop: AC Unit
+	"$baseTexture" "models/props_ctf/ac_unit"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[ .2 .4 .2]"
+	"$envmapmask" "models/props_ctf/ac_unit_mask"
+	"$surfaceprop" "metal"
+	"$model" 1
+}

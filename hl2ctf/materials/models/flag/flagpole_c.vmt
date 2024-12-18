@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	// Combine Flag
+	"$baseTexture" "models/flag/flagpole_c"
+	"$envmapmask" "models/flag/flagpole_mask"
+	"$envmap" "env_cubemap"
+	"$surfaceprop" "metal"
+	"$nodecal" 1
+	"$model" 1
+}

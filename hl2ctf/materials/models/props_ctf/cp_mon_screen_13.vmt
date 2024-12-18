@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	// CP Monitor Screen 13
+	"$baseTexture" "models/props_ctf/cp_mon_screen_13"
+	"$surfaceprop" "glass"
+	"$selfillum" 1
+	"$nodecal" 1
+	"$model" 1
+}

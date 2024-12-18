@@ -1,0 +1,1834 @@
+// -------------------------------------------
+// HL2CTF Voiceover and Common Audio Scripts
+// -------------------------------------------
+
+// WAVE GUIDE:
+// * = Stream from disk and flush soon after
+// # = Bypass DSP
+// @ = Non-directional and audible everywhere
+// > = Doppler: Left channel moving toward, Right channel moving away
+// < = Directional: Left channel facing front, Right channel rear
+// ^ = Distance: Left channel close, Right channel far
+// ) = Spatial Stereo: Both channels used literally
+// } = Forces low quality
+//
+// CHANNEL GUIDE:
+// CHAN_AUTO    = Generic
+// CHAN_WEAPON  = Player and NPC weapons fire
+// CHAN_VOICE   = Voiceover dialog
+// CHAN_BODY    = Clothing, Footsteps etc.
+// CHAN_STREAM  = Sound that is not responses to events
+// CHAN_STATIC  = Generic, Fixed location sounds
+
+// --------------------------
+// HL2CTF Game Sounds Common
+// --------------------------
+
+"CTF.HitReg"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NONE"
+	"wave"			"#ctf/common/hit_reg.wav"
+}
+
+"CTF.HitRegArm"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NONE"
+	"wave"			"#ctf/common/hit_reg_arm.wav"
+}
+
+"CTF.HitRegLeg"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NONE"
+	"wave"			"#ctf/common/hit_reg_leg.wav"
+}
+
+"CTF.HitRegHead"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NONE"
+	"wave"			"#ctf/common/hit_reg_head.wav"
+}
+
+"CTF.NightVisionOn"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_110dB"
+	"wave"			"#ctf/common/nightvision_on.wav"
+}
+
+"CTF.NightVisionOff"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_110dB"
+	"wave"			"#ctf/common/nightvision_Off.wav"
+}
+
+// --------------------------
+// HL2CTF Standard VOs
+// --------------------------
+
+"CTF.CombineFlagCaptured"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"rndwave"
+	{
+			"wave"	"#ctf/vo_ctf/combine_flag_captured_00.wav"
+			"wave"	"#ctf/vo_ctf/combine_flag_captured_01.wav"
+			"wave"	"#ctf/vo_ctf/combine_flag_captured_02.wav"
+			"wave"	"#ctf/vo_ctf/combine_flag_captured_03.wav"
+			"wave"	"#ctf/vo_ctf/combine_flag_captured_04.wav"
+			"wave"	"#ctf/vo_ctf/combine_flag_captured_05.wav"
+			"wave"	"#ctf/vo_ctf/combine_flag_captured_06.wav"
+	}
+}
+
+"CTF.ResistanceFlagCaptured"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"rndwave"
+	{
+			"wave"	"#ctf/vo_ctf/rebel_flag_captured_00.wav"
+			"wave"	"#ctf/vo_ctf/rebel_flag_captured_01.wav"
+			"wave"	"#ctf/vo_ctf/rebel_flag_captured_02.wav"
+			"wave"	"#ctf/vo_ctf/rebel_flag_captured_03.wav"
+			"wave"	"#ctf/vo_ctf/rebel_flag_captured_04.wav"
+			"wave"	"#ctf/vo_ctf/rebel_flag_captured_05.wav"
+			"wave"	"#ctf/vo_ctf/rebel_flag_captured_06.wav"
+	}
+}
+
+"CTF.CombineFlagTaken"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"rndwave"
+	{
+			"wave"	"#ctf/vo_ctf/combine_flag_taken_00.wav"
+			"wave"	"#ctf/vo_ctf/combine_flag_taken_01.wav"
+			"wave"	"#ctf/vo_ctf/combine_flag_taken_02.wav"
+			"wave"	"#ctf/vo_ctf/combine_flag_taken_03.wav"
+			"wave"	"#ctf/vo_ctf/combine_flag_taken_04.wav"
+	}
+}
+
+"CTF.ResistanceFlagTaken"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"rndwave"
+	{
+			"wave"	"#ctf/vo_ctf/rebel_flag_taken_00.wav"
+			"wave"	"#ctf/vo_ctf/rebel_flag_taken_01.wav"
+			"wave"	"#ctf/vo_ctf/rebel_flag_taken_02.wav"
+			"wave"	"#ctf/vo_ctf/rebel_flag_taken_03.wav"
+			"wave"	"#ctf/vo_ctf/rebel_flag_taken_04.wav"
+	}
+}
+
+"CTF.CombineFlagDropped"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"#ctf/vo_ctf/combine_flag_dropped.wav"
+}
+
+"CTF.ResistanceFlagDropped"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"			"#ctf/vo_ctf/rebel_flag_dropped.wav"
+}
+
+"CTF.CombineFlagReturned"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"rndwave"
+	{
+			"wave"	"#ctf/vo_ctf/combine_flag_returned_00.wav"
+			"wave"	"#ctf/vo_ctf/combine_flag_returned_01.wav"
+			"wave"	"#ctf/vo_ctf/combine_flag_returned_02.wav"
+			"wave"	"#ctf/vo_ctf/combine_flag_returned_03.wav"
+	}
+}
+
+"CTF.ResistanceFlagReturned"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"rndwave"
+	{
+			"wave"	"#ctf/vo_ctf/rebel_flag_returned_00.wav"
+			"wave"	"#ctf/vo_ctf/rebel_flag_returned_01.wav"
+			"wave"	"#ctf/vo_ctf/rebel_flag_returned_02.wav"
+			"wave"	"#ctf/vo_ctf/rebel_flag_returned_03.wav"
+			"wave"	"#ctf/vo_ctf/rebel_flag_returned_04.wav"
+	}
+}
+
+// --------------------------
+// HL2CTF Wins/Leads/Taunts
+// --------------------------
+
+"CTF.CombineWins"
+{
+	"channel"			"CHAN_AUTO"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+	"soundlevel"	"SNDLVL_95DB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_ctf/combine_wins_00.wav"
+		"wave"	"#ctf/vo_ctf/combine_wins_00.wav"
+		"wave"	"#ctf/vo_ctf/combine_wins_00.wav"
+	}
+}
+
+"CTF.RebelsWin"
+{
+	"channel"			"CHAN_AUTO"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+	"soundlevel"	"SNDLVL_95DB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_ctf/rebels_win_00.wav"
+		"wave"	"#ctf/vo_ctf/rebels_win_00.wav"
+		"wave"	"#ctf/vo_ctf/rebels_win_00.wav"
+	}
+}
+
+"CTF.TieGame" 
+{ 
+	"channel"			"CHAN_AUTO" 
+	"volume"			"0.95" 
+	"pitch"				"PITCH_NORM" 
+	"soundlevel"	"SNDLVL_95DB" 
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_ctf/tie_game_00.wav"
+		"wave"	"#ctf/vo_ctf/tie_game_00.wav"
+		"wave"	"#ctf/vo_ctf/tie_game_00.wav"
+	}
+}
+
+"CTF.StartRound"
+{
+	"channel"			"CHAN_AUTO"
+	"volume"			"VOL_NORM"
+	"pitch"				"PITCH_NORM"
+	"soundlevel"	"SNDLVL_90DB"
+	"wave"	"#ctf/vo_ctf/ctf_startround.wav"
+}
+
+"CTF.SuddenDeath"
+{
+	"channel"			"CHAN_AUTO"
+	"volume"			"VOL_NORM"
+	"pitch"				"PITCH_NORM"
+	"soundlevel"	"SNDLVL_90DB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_ctf/ctf_sudden_death_00.wav"
+		"wave"	"#ctf/vo_ctf/ctf_sudden_death_00.wav"
+		"wave"	"#ctf/vo_ctf/ctf_sudden_death_00.wav"
+	}
+}
+
+"CTF.CombineTaunt"
+{
+	"channel"			"CHAN_AUTO"
+	"volume"			"VOL_NORM"
+	"pitch"				"PITCH_NORM"
+	"soundlevel"	"SNDLVL_45DB"
+	"rndwave"
+	{
+		"wave"	"ctf/vo_taunts/taunt_combine_01.wav"
+		"wave"	"ctf/vo_taunts/taunt_combine_02.wav"
+		"wave"	"ctf/vo_taunts/taunt_combine_03.wav"
+		"wave"	"ctf/vo_taunts/taunt_combine_04.wav"
+		"wave"	"ctf/vo_taunts/taunt_combine_05.wav"
+		"wave"	"ctf/vo_taunts/taunt_combine_06.wav"
+		"wave"	"ctf/vo_taunts/taunt_combine_07.wav"
+		"wave"	"ctf/vo_taunts/taunt_combine_08.wav"
+		"wave"	"ctf/vo_taunts/taunt_combine_09.wav"
+		"wave"	"ctf/vo_taunts/taunt_combine_10.wav"
+		"wave"	"ctf/vo_taunts/taunt_combine_11.wav"
+		"wave"	"ctf/vo_taunts/taunt_combine_12.wav"
+	}
+}
+
+"CTF.RebelTaunt"
+{
+	"channel"			"CHAN_AUTO"
+	"volume"			"VOL_NORM"
+	"pitch"				"PITCH_NORM"
+	"soundlevel"	"SNDLVL_45DB"
+	"rndwave"
+	{
+		"wave"	"ctf/vo_taunts/taunt_rebels_01.wav"
+		"wave"	"ctf/vo_taunts/taunt_rebels_02.wav"
+		"wave"	"ctf/vo_taunts/taunt_rebels_03.wav"
+		"wave"	"ctf/vo_taunts/taunt_rebels_04.wav"
+		"wave"	"ctf/vo_taunts/taunt_rebels_05.wav"
+		"wave"	"ctf/vo_taunts/taunt_rebels_06.wav"
+		"wave"	"ctf/vo_taunts/taunt_rebels_07.wav"
+		"wave"	"ctf/vo_taunts/taunt_rebels_08.wav"
+		"wave"	"ctf/vo_taunts/taunt_rebels_09.wav"
+		"wave"	"ctf/vo_taunts/taunt_rebels_10.wav"
+		"wave"	"ctf/vo_taunts/taunt_rebels_11.wav"
+		"wave"	"ctf/vo_taunts/taunt_rebels_12.wav"
+	}
+}
+
+
+// --------------------------
+// HL2CTF One Flag VOs
+// --------------------------
+
+"CTF.OneFlagTakenCombine"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65DB"
+	"wave"	"#ctf/vo_oneflag/oneflag_taken_combine.wav"
+}
+
+"CTF.OneFlagTakenRebels"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65DB"
+	"wave"	"#ctf/vo_oneflag/oneflag_taken_rebels.wav"
+}
+
+"CTF.OneFlagDropped"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65DB"
+	"wave"	"#ctf/vo_oneflag/oneflag_dropped.wav"
+}
+
+"CTF.OneFlagReturned"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65DB"
+	"wave"	"#ctf/vo_oneflag/oneflag_returned.wav"
+}
+
+"CTF.OneFlagCapturedCombine"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"#ctf/vo_oneflag/oneflag_captured_combine.wav"
+}
+
+"CTF.OneFlagCapturedRebels"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"#ctf/vo_oneflag/oneflag_captured_rebels.wav"
+}
+
+// --------------------------
+// HL2CTF Domination VOs
+// --------------------------
+
+"CTF.DomPickupCombine"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65DB"
+	"wave"	"#ctf/vo_dom/dom_pickup_combine.wav"
+}
+
+"CTF.DomPickupRebel"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65DB"
+	"wave"	"#ctf/vo_dom/dom_pickup_rebels.wav"
+}
+
+"CTF.DomFlagDropped"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65DB"
+	"wave"	"#ctf/vo_dom/dom_flag_dropped.wav"
+}
+
+"CTF.DomFlagReturned"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65DB"
+	"wave"	"#ctf/vo_dom/dom_flag_returned.wav"
+}
+
+// --------------------------
+// HL2CTF Football VOs
+// --------------------------
+
+"CTF.FootballTakenCombine"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"98,101"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"#ctf/vo_football/football_taken_combine.wav"
+}
+
+"CTF.FootballTakenRebels"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"98,101"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"#ctf/vo_football/football_taken_rebels.wav"
+}
+
+"CTF.FootballDropped"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"98,101"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"#ctf/vo_football/football_dropped.wav"
+}
+
+"CTF.FootballReturned"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"98,101"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"#ctf/vo_football/football_returned.wav"
+}
+
+"CTF.FootballCapturedCombine"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"98,101"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"#ctf/vo_football/football_captured_combine.wav"
+}
+
+"CTF.FootballCapturedRebels"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"98,101"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"#ctf/vo_football/football_captured_rebels.wav"
+}
+
+"CTF.Football5min"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"#ctf/vo_football/football_5min.wav"
+}
+
+"CTF.Football1min"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"#ctf/vo_football/football_1min.wav"
+}
+
+// --------------------------
+// HL2CTF Announcer VOs
+// --------------------------
+
+// CTF Events
+
+"CTF.AnnWarmup"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"ctf/vo_ann/ann_ctf_warmup.wav"
+}
+
+"CTF.AnnReadyup"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"ctf/vo_ann/ann_ctf_readyup.wav"
+}
+
+"CTF.AnnOvertime"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"ctf/vo_ann/ann_ctf_overtime.wav"
+}
+
+"CTF.AnnScramble"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"ctf/vo_ann/ann_ctf_scramble.wav"
+}
+
+"CTF.AnnSwapTeams"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"ctf/vo_ann/ann_ctf_teamswap.wav"
+}
+
+"CTF.AnnSwapTeamsCR"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"ctf/vo_ann/ann_ctf_teamswap_r.wav"
+}
+
+"CTF.AnnSwapTeamsCC"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"ctf/vo_ann/ann_ctf_teamswap_c.wav"
+}
+
+// Time
+
+"CTF.Ann1min"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"ctf/vo_ann/ann_ctf_1min.wav"
+}
+
+"CTF.Ann5min"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"ctf/vo_ann/ann_ctf_5min.wav"
+}
+
+"CTF.Ann3to1"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"ctf/vo_ann/ann_ctf_03_01.wav"
+}
+
+"CTF.Ann5to1"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"ctf/vo_ann/ann_ctf_05_01.wav"
+}
+
+"CTF.Ann10to1"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"ctf/vo_ann/ann_ctf_10_01.wav"
+}
+
+"CTF.AnnTimeadded"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"ctf/vo_ann/ann_ctf_timeadded.wav"
+}
+
+// Rounds
+
+"CTF.AnnRound15s"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"ctf/vo_ann/ann_ctf_rnd_15sec.wav"
+}
+
+"CTF.AnnRound30s"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"ctf/vo_ann/ann_ctf_rnd_30sec.wav"
+}
+
+"CTF.AnnRound60s"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"ctf/vo_ann/ann_ctf_rnd_60sec.wav"
+}
+
+"CTF.AnnStalemate"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75DB"
+	"wave"	"ctf/vo_ann/ann_ctf_stalemate.wav"
+}
+
+// Capture Points CP
+
+"CTF.AnnCapAllPoints"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_prep_cps.wav"
+}
+
+"CTF.AnnAttackPoints"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_att_cps.wav"
+}
+
+"CTF.AnnDefendPoints"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_def_cps.wav"
+}
+
+"CTF.AnnEnemyCapPoint"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_enemy_cap_pnt.wav"
+}
+
+"CTF.AnnTeamCapPoint"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_team_cap_pnt.wav"
+}
+
+"CTF.AnnPointCaptured"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_pnt_cap.wav"
+}
+
+"CTF.AnnPointCapturedCombine"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_pnt_cap_c.wav"
+}
+
+"CTF.AnnPointCapturedRebels"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_pnt_cap_r.wav"
+}
+
+// Control Point
+
+"CTF.AnnSecPntCombine"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_sec_cp_c.wav"
+}
+
+"CTF.AnnSecPntRebels"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_sec_cp_r.wav"
+}
+
+"CTF.AnnLossPntCombine"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_loss_cp_c.wav"
+}
+
+"CTF.AnnLossPntRebels"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_loss_cp_r.wav"
+}
+
+// Territorial Control TC
+
+"CTF.AnnTCCombine"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_tc_c.wav"
+}
+
+"CTF.AnnTCRebels"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_tc_r.wav"
+}
+
+"CTF.AnnTCCombineDelayed"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_tc_c_delay.wav"
+}
+
+"CTF.AnnTCRebelsDelayed"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_tc_r_delay.wav"
+}
+
+// Capture Flags
+
+"CTF.AnnAttackFlags"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_att_flags.wav"
+}
+
+"CTF.AnnDefendFlags"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_def_flags.wav"
+}
+
+"CTF.AnnEnemyCapFlag"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_enemy_cap_flag.wav"
+}
+
+"CTF.AnnTeamCapFlag"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_team_cap_flag.wav"
+}
+
+"CTF.AnnRelocatedC"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_reloc_c.wav"
+}
+
+"CTF.AnnRelocatedR"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_reloc_r.wav"
+}
+
+// Push
+
+"CTF.AnnInfulCombine"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_inful_c.wav"
+}
+
+"CTF.AnnInfulRebels"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_inful_r.wav"
+}
+
+"CTF.AnnRecoCombine"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_reco_c.wav"
+}
+
+"CTF.AnnRecoRebels"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_reco_r.wav"
+}
+
+"CTF.AnnOnePush"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_85DB"
+	"wave"	"ctf/vo_ann/ann_ctf_one_push.wav"
+}
+
+// Wins
+
+"CTF.AnnWinCombine"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_90DB"
+	"wave"	"ctf/vo_ann/ann_ctf_win_combine.wav"
+}
+
+"CTF.AnnWinRebels"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_90DB"
+	"wave"	"ctf/vo_ann/ann_ctf_win_rebels.wav"
+}
+
+// -----------------------------
+// HL2CTF Voice Communications
+// -----------------------------
+
+// ctfvcom 1
+"CTF.VComRebelDefendingBase"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/def_defending_r00.wav"
+		"wave"	"#ctf/vo_comm/def_defending_r01.wav"
+		"wave"	"#ctf/vo_comm/def_defending_r02.wav"
+	}
+}
+
+"CTF.VComCombineDefendingBase"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/def_defending_c00.wav"
+		"wave"	"#ctf/vo_comm/def_defending_c01.wav"
+		"wave"	"#ctf/vo_comm/def_defending_c02.wav"
+	}
+}
+
+// ctfvcom 2
+"CTF.VComRebelBaseSafe"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/def_basesafe_r00.wav"
+		"wave"	"#ctf/vo_comm/def_basesafe_r01.wav"
+		"wave"	"#ctf/vo_comm/def_basesafe_r02.wav"
+	}
+}
+
+"CTF.VComCombineBaseSafe"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/def_basesafe_c00.wav"
+		"wave"	"#ctf/vo_comm/def_basesafe_c01.wav"
+		"wave"	"#ctf/vo_comm/def_basesafe_c02.wav"
+	}
+}
+
+// ctfvcom 3
+"CTF.VComRebelBaseUnderAttack"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/def_baseunderattack_r00.wav"
+		"wave"	"#ctf/vo_comm/def_baseunderattack_r01.wav"
+		"wave"	"#ctf/vo_comm/def_baseunderattack_r02.wav"
+	}
+}
+
+"CTF.VComCombineBaseUnderAttack"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/def_baseunderattack_c00.wav"
+		"wave"	"#ctf/vo_comm/def_baseunderattack_c01.wav"
+		"wave"	"#ctf/vo_comm/def_baseunderattack_c02.wav"
+	}
+}
+
+// ctfvcom 4
+"CTF.VComRebelCarrierLocated"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/mid_carrierlocated_r00.wav"
+		"wave"	"#ctf/vo_comm/mid_carrierlocated_r01.wav"
+		"wave"	"#ctf/vo_comm/mid_carrierlocated_r02.wav"
+	}
+}
+
+"CTF.VComCombineCarrierLocated"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/mid_carrierlocated_c00.wav"
+		"wave"	"#ctf/vo_comm/mid_carrierlocated_c01.wav"
+		"wave"	"#ctf/vo_comm/mid_carrierlocated_c02.wav"
+	}
+}
+
+// ctfvcom 5
+"CTF.VComRebelPassTheFlag"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/mid_passflag_r00.wav"
+		"wave"	"#ctf/vo_comm/mid_passflag_r01.wav"
+		"wave"	"#ctf/vo_comm/mid_passflag_r02.wav"
+	}
+}
+
+"CTF.VComCombinePassTheFlag"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/mid_passflag_c00.wav"
+		"wave"	"#ctf/vo_comm/mid_passflag_c01.wav"
+		"wave"	"#ctf/vo_comm/mid_passflag_c02.wav"
+	}
+}
+
+// ctfvcom 6
+"CTF.VComRebelProtectCarrier"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/mid_protectcarrier_r00.wav"
+		"wave"	"#ctf/vo_comm/mid_protectcarrier_r01.wav"
+		"wave"	"#ctf/vo_comm/mid_protectcarrier_r02.wav"
+	}
+}
+
+"CTF.VComCombineProtectCarrier"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/mid_protectcarrier_c00.wav"
+		"wave"	"#ctf/vo_comm/mid_protectcarrier_c01.wav"
+		"wave"	"#ctf/vo_comm/mid_protectcarrier_c02.wav"
+	}
+}
+
+// ctfvcom 7
+"CTF.VComRebelAttackingEnemy"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/off_attackingenemy_r00.wav"
+		"wave"	"#ctf/vo_comm/off_attackingenemy_r01.wav"
+		"wave"	"#ctf/vo_comm/off_attackingenemy_r02.wav"
+	}
+}
+
+"CTF.VComCombineAttackingEnemy"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/off_attackingenemy_c00.wav"
+		"wave"	"#ctf/vo_comm/off_attackingenemy_c01.wav"
+		"wave"	"#ctf/vo_comm/off_attackingenemy_c02.wav"
+	}
+}
+
+// ctfvcom 8
+"CTF.VComRebelFollowMe"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/off_followme_r00.wav"
+		"wave"	"#ctf/vo_comm/off_followme_r01.wav"
+		"wave"	"#ctf/vo_comm/off_followme_r02.wav"
+	}
+}
+
+"CTF.VComCombineFollowMe"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/off_followme_c00.wav"
+		"wave"	"#ctf/vo_comm/off_followme_c01.wav"
+		"wave"	"#ctf/vo_comm/off_followme_c02.wav"
+	}
+}
+
+// ctfvcom 9
+"CTF.VComRebelDefensesDown"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/off_defensesdown_r00.wav"
+		"wave"	"#ctf/vo_comm/off_defensesdown_r01.wav"
+		"wave"	"#ctf/vo_comm/off_defensesdown_r02.wav"
+	}
+}
+
+"CTF.VComCombineDefensesDown"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/off_defensesdown_c00.wav"
+		"wave"	"#ctf/vo_comm/off_defensesdown_c01.wav"
+		"wave"	"#ctf/vo_comm/off_defensesdown_c02.wav"
+	}
+}
+
+// ctfvcom 10
+"CTF.VComRebelReturnTheFlag"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/com_returnflag_r00.wav"
+		"wave"	"#ctf/vo_comm/com_returnflag_r01.wav"
+		"wave"	"#ctf/vo_comm/com_returnflag_r02.wav"
+	}
+}
+
+"CTF.VComCombineReturnTheFlag"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/com_returnflag_c00.wav"
+		"wave"	"#ctf/vo_comm/com_returnflag_c01.wav"
+		"wave"	"#ctf/vo_comm/com_returnflag_c02.wav"
+	}
+}
+
+// ctfvcom 11
+"CTF.VComRebelPassingTheFlag"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/com_passingflag_r00.wav"
+		"wave"	"#ctf/vo_comm/com_passingflag_r01.wav"
+		"wave"	"#ctf/vo_comm/com_passingflag_r02.wav"
+	}
+}
+
+"CTF.VComCombinePassingTheFlag"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+		"wave"	"#ctf/vo_comm/com_passingflag_c00.wav"
+		"wave"	"#ctf/vo_comm/com_passingflag_c01.wav"
+		"wave"	"#ctf/vo_comm/com_passingflag_c02.wav"
+	}
+}
+
+// ctfvcom 12
+"CTF.VComRebelAffirmative"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+			"wave"	"#ctf/vo_comm/com_affirmative_r00.wav"
+			"wave"	"#ctf/vo_comm/com_affirmative_r01.wav"
+			"wave"	"#ctf/vo_comm/com_affirmative_r02.wav"
+	}
+}
+
+"CTF.VComCombineAffirmative"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+			"wave"	"#ctf/vo_comm/com_affirmative_c00.wav"
+			"wave"	"#ctf/vo_comm/com_affirmative_c01.wav"
+			"wave"	"#ctf/vo_comm/com_affirmative_c02.wav"
+	}
+}
+
+// ctfvcom 13
+"CTF.VComRebelNegative"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+			"wave"	"#ctf/vo_comm/com_negative_r00.wav"
+			"wave"	"#ctf/vo_comm/com_negative_r01.wav"
+			"wave"	"#ctf/vo_comm/com_negative_r02.wav"
+	}
+}
+
+"CTF.VComCombineNegative"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+			"wave"	"#ctf/vo_comm/com_negative_c00.wav"
+			"wave"	"#ctf/vo_comm/com_negative_c01.wav"
+			"wave"	"#ctf/vo_comm/com_negative_c02.wav"
+	}
+}
+
+
+// --------------------------
+// HL2CTF Awards Local
+// --------------------------
+
+"CTF.DefendCarrier"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_110DB"
+	"wave"			"#ctf/vo_awards/ctf_defend_carrier_00.wav"
+}
+
+"CTF.DefendFlag"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_110DB"
+	"wave"			"#ctf/vo_awards/ctf_defend_flag_00.wav"
+}
+
+"CTF.KilledCarrier"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_110DB"
+	"wave"			"#ctf/vo_awards/ctf_killed_carrier_00.wav"
+}
+
+"CTF.CaptureAssist"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_110DB"
+	"wave"			"#ctf/vo_awards/ctf_capture_assist_00.wav"
+}
+
+// --------------------------
+// HL2CTF Runes Global
+// --------------------------
+
+// DAMAGE
+
+"CTF.DoubleDamage.pickup"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_70DB"
+	"wave"			"ctf/vo_runes/rune_damage_pickup.wav"
+}
+
+"CTF.DoubleDamage.drop"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_70DB"
+	"wave"			"ctf/vo_runes/rune_damage_drop.wav"
+}
+
+"CTF.DoubleDamage.activate"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"95,110"
+	"soundlevel"		"SNDLVL_50DB"
+	"wave"			"#ctf/vo_runes/rune_damage_activate.wav"
+}
+
+// LUNG
+
+"CTF.IronLung.pickup"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_70DB"
+	"wave"			"ctf/vo_runes/rune_iron_lung_pickup.wav"
+}
+
+"CTF.IronLung.drop"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_70DB"
+	"wave"			"ctf/vo_runes/rune_iron_lung_drop.wav"
+}
+
+"CTF.IronLung.activate"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"95,110"
+	"soundlevel"		"SNDLVL_50DB"
+	"wave"			"#ctf/vo_runes/rune_iron_lung_activate.wav"
+}
+
+// REGEN
+
+"CTF.Regen.pickup"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_70DB"
+	"wave"			"ctf/vo_runes/rune_regen_pickup.wav"
+}
+
+"CTF.Regen.drop"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_70DB"
+	"wave"			"ctf/vo_runes/rune_regen_drop.wav"
+}
+
+"CTF.Regen.activate"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"95,110"
+	"soundlevel"		"SNDLVL_50DB"
+	"wave"			"#ctf/vo_runes/rune_regen_activate.wav"
+}
+
+// SHIELD
+
+"CTF.Shield.pickup"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_70DB"
+	"wave"			"ctf/vo_runes/rune_shield_pickup.wav"
+}
+
+"CTF.Shield.drop"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_70DB"
+	"wave"			"ctf/vo_runes/rune_shield_drop.wav"
+}
+
+"CTF.Shield.activate"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"95,110"
+	"soundlevel"		"SNDLVL_50DB"
+	"wave"			"#ctf/vo_runes/rune_shield_activate.wav"
+}
+
+// DRAIN
+
+"CTF.Drain.pickup"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_70DB"
+	"wave"			"ctf/vo_runes/rune_drain_pickup.wav"
+}
+
+"CTF.Drain.drop"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_70DB"
+	"wave"			"ctf/vo_runes/rune_drain_drop.wav"
+}
+
+"CTF.Drain.activate"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"95,110"
+	"soundlevel"		"SNDLVL_50DB"
+	"wave"			"#ctf/vo_runes/rune_drain_activate.wav"
+}
+
+// CLOAK
+
+"CTF.Cloak.pickup"
+{ 
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_70DB"
+	"wave"			"ctf/vo_runes/rune_cloak_pickup.wav"
+}
+
+"CTF.Cloak.drop"
+{ 
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_70DB"
+	"wave"			"ctf/vo_runes/rune_cloak_drop.wav"
+}
+
+"CTF.Cloak.activate"
+{ 
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"95,110"
+	"soundlevel"		"SNDLVL_50DB"
+	"wave"			"#ctf/vo_runes/rune_cloak_activate.wav"
+}
+
+// HASTE (BURST)
+
+"CTF.Haste.pickup"
+{ 
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_70DB"
+	"wave"			"ctf/vo_runes/rune_haste_pickup.wav"
+}
+
+"CTF.Haste.drop"
+{ 
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_70DB"
+	"wave"			"ctf/vo_runes/rune_haste_drop.wav"
+}
+
+"CTF.Haste.activate"
+{ 
+	"channel"		"CHAN_AUTO"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_80DB"
+	"wave"			"#ctf/vo_runes/rune_haste_activate.wav"
+}
+
+// --------------------------
+// HL2CTF Common Map Objects
+// --------------------------
+
+"CTF.elevator_start"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.75"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"wave"			"plats/elevator_start1.wav"
+}
+
+"CTF.elevator_move"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.70"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"wave"			"plats/elevator_move_loop1.wav"
+}
+
+"CTF.elevator_stop"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.85"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75dB"
+	"wave"			"plats/elevator_stop2.wav"
+}
+
+"CTF.plat_start"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.75"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"wave"			"plats/elevator_large_start1.wav"
+}
+
+"CTF.plat_move"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.75"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"wave"			"plats/elevator_loop1.wav"
+}
+
+"CTF.plat_stop"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.75"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75dB"
+	"wave"			"plats/elevator_large_stop1.wav"
+}
+
+"CTF.substation_telephone"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"wave"			"ctf/substation/substation_telephone.wav"
+}
+
+"CTF.substation_alarm_c"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_110dB"
+	"wave"			"ctf/substation/substation_alarm_c.wav"
+}
+
+"CTF.substation_alarm_r"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_110dB"
+	"wave"			"ctf/substation/substation_alarm_r.wav"
+}
+
+// --------------------------
+// HL2CTF Map Ambient/Effects
+// --------------------------
+
+"CTF.AirFlow"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.90"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"wave"			"ctf/ambient/ambient_ctf_heavy_air.wav"
+}
+
+"CTF.Suburb"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75dB"
+	"wave"			"ctf/ambient/ambient_ctf_suburb_loop.wav"
+}
+
+"CTF.Machine"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.90"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"wave"			"ctf/ambient/ambient_ctf_machine.wav"
+}
+
+"CTF.LightRain"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"wave"			"ctf/ambient/ambient_ctf_light_rain.wav"
+}
+
+"CTF.Defrost.Announcer"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.85"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+			"wave"	"*npc/overwatch/cityvoice/f_trainstation_assemble_spkr.wav"
+			"wave"	"*npc/overwatch/cityvoice/f_trainstation_assumepositions_spkr.wav"
+			"wave"	"*npc/overwatch/cityvoice/f_trainstation_inform_spkr.wav"
+			"wave"	"*npc/overwatch/cityvoice/f_trainstation_offworldrelocation_spkr.wav"
+	}
+}
+
+"CTF.Breen.Cast"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.85"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+			"wave"	"*vo/breencast/br_overwatch01.wav"
+			"wave"	"*vo/breencast/br_overwatch06.wav"
+			"wave"	"*vo/breencast/br_overwatch07.wav"
+			"wave"	"*vo/breencast/br_overwatch08.wav"
+			"wave"	"*vo/breencast/br_overwatch09.wav"
+	}
+}
+
+"CTF.Substation.Announcer"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.85"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_65dB"
+	"rndwave"
+	{
+			"wave"	"*ctf/substation/substation_voice_01.wav"
+			"wave"	"*ctf/substation/substation_voice_02.wav"
+			"wave"	"*ctf/substation/substation_voice_03.wav"
+			"wave"	"*ctf/substation/substation_voice_04.wav"
+			"wave"	"*ctf/substation/substation_voice_05.wav"
+			"wave"	"*ctf/substation/substation_voice_06.wav"
+			"wave"	"*ctf/substation/substation_voice_07.wav"
+			"wave"	"*ctf/substation/substation_voice_08.wav"
+	}
+}
+
+"CTF.Export.CombineRadio"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_100dB"
+	"rndwave"
+	{
+			"wave"	"*npc/combine_soldier/vo/prison_soldier_bunker1.wav"
+			"wave"	"*npc/combine_soldier/vo/prison_soldier_bunker2.wav"
+			"wave"	"*npc/combine_soldier/vo/prison_soldier_bunker3.wav"
+			"wave"	"*npc/combine_soldier/vo/prison_soldier_prosecuted7.wav"
+			"wave"	"*npc/combine_soldier/vo/prison_soldier_visceratorsa5.wav"
+			"wave"	"*npc/combine_soldier/vo/prison_soldier_fallback_b4.wav"
+			"wave"  "*npc/combine_soldier/vo/prison_soldier_negativecontainment.wav"
+	}
+}
+
+"CTF.FlashFreeze"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.90"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_90dB"
+	"wave"			"ctf/effects/flashfreeze.wav"
+}
+
+"CTF.Rocket.Test"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.90"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_90dB"
+	"wave"			"ctf/effects/rocket_test.wav"
+}
+
+"CTF.Toro.Rocket"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_125dB"
+	"wave"			"ctf/effects/toro_rocket.wav"
+}
+
+"CTF.Flood"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.90"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_90dB"
+	"wave"			"ctf/effects/water_flood.wav"
+}
+
+"CTF.Football.Crowd"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_95dB"
+	"wave"			"ctf/ambient/ambient_ctf_football_crowd.wav"
+}
+
+"CTF.Football.Cheer"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.90"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_110dB"
+	"wave"			"ctf/effects/crowd_applause.wav"
+}
+
+"CTF.Flagring"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_95dB"
+	"wave"			")ctf/effects/flag_ring_loop.wav"
+}
+
+"CTF.Duality.Loop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_95dB"
+	"wave"			")ctf/ambient/ambient_duality_loop.wav"
+}
+
+"CTF.Ducky"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_90dB"
+	"rndwave"
+	{
+			"wave"	"*ctf/effects/ctf_ducky.wav"
+			"wave"	"*ctf/effects/ctf_ducky1.wav"
+			"wave"	"*ctf/effects/ctf_ducky2.wav"
+	}
+}

@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "Metal/metalfloor002a"
+	"$surfaceprop" "metal"
+	"$bumpmap" "hl2ctf/refinery/metalfloor002a_normal"
+}

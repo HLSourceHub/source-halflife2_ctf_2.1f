@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "hl2ctf/decals/ctf_hwsign_rust"
+	"$translucent" 1
+	"$decal" 1
+	"$decalscale" "0.50"
+	"%keywords" "hl2ctf"
+}

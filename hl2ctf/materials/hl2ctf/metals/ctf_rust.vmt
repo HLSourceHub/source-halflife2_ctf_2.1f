@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "hl2ctf/metals/ctf_rust"
+	"$surfaceprop" "metal"
+	"%keywords" "hl2ctf"
+}

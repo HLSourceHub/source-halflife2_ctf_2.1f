@@ -1,0 +1,887 @@
+-----------------------------------------------------------------------------------------
+HL2:CTF 2.1 Changelog - December 08th, 2011
+-----------------------------------------------------------------------------------------
+
+MAPS:
+
+Revived: ig_curved          [Original CTF Map by Owner. Updates by Sacrifist and MeNtHoL]
+
+Updated: ctf_canyon2        Changed Shield Team Runes to Drain
+Updated: ctf_floodzone      Changed Shield Team Runes to Drain
+Updated: ctf_atomicgarden   Fixed info_player_start position and other tweaks
+Updated: ig_duality         Changed from 4 captures to 8 (including xbow and mag versions)
+Updated: ctf_storm          Removed RPG from middle bridge
+Updated: ctf_lambda_bunker  Fixed barrier in Combine Spawn
+
+ADDED FEATURES:
+
+Added: Individual hit registration sounds for Head, Torso, Arms and Legs
+Added: Charged Railgun shot now colorized Red
+Added: Secondary zoom function to pistol and .357
+
+CHANGES:
+
+Changed: Adjusted player damage multipliers and Weapon damage values
+Changed: Slight increase to wall-jump vertical height multiplier
+Changed: Player spawns with 100 health and 10 suit
+
+FIXES:
+
+Fixed: Spectators viewing flag carrier no longer spawn holding the flag
+Fixed: TC Score Reset
+
+-----------------------------------------------------------------------------------------
+HL2:CTF 2.0 Changelog - October 20th, 2011
+-----------------------------------------------------------------------------------------
+
+ENGINE SOURCE UPDATE:
+
+Game modification now runs under the free Source SDK Base (appID 215) so players are no longer
+required to own any other games or software to play HL2CTF.
+
+MAPS:
+
+Added: ctf_canyon2         [Original CTF Map by Andy Green. Updates by Sacrifist]
+Added: ctf_2fort           [Sacrifist]
+Added: ctf_torogorge       [MeNtHoL]
+Added: 1f_epicenter        [Original DM Map by GingerLord. Updates by Sacrifist and MeNtHoL]
+Added: xxx_blooddish       [MeNtHoL]
+Added: fb_mesafield        [Sacrifist]
+Added: tc_overwatch        [Original DM Map from Valve SDK. Updates by Sacrifist]
+Added: tc_lockdown         [Original DM Map from Valve SDK. Updates by Sacrifist]
+Added: ig_duality          [MeNtHoL]
+Added: cp_canals           [Original CTF Map by Sander. Updates by MeNtHoL]
+
+Revived: dom_raven         [Original by Sander. Updates by MeNtHoL]
+Revived: ctf_thegreatwall  [Original by Keved. Updates by Sacrifist and MeNtHoL]
+Revived: dom_rust          [Original by Atrocity. Updates by Sacrifist]
+Revived: ctf_defrost       [Menthol]
+Revived: ctf_storm         [Original CTF Map by Atrocity. Updates by Sacrifist]
+Revived: push_substation   [Original CTF Map by Susso. Updates by MeNtHoL]
+Revived: ctf_lambdabunker  [Original HL1 Map by Valve. Updates by Sacrifist]
+Revived: ctf_atomicgarden  [Original by CoKie. Updates by Sacrifist and MeNtHoL]
+
+Updated: ctf_floodzone     [MeNtHoL]
+Updated: ctf_dirtwork      [MeNtHoL]
+Updated: ctf_prisonriot    [Original by Keved. Updates by MeNtHoL]
+Updated: dom_np_refinery   [Original by Keved. Updates by Sacrifist]
+
+Removed: ctf_flare, dom_export, dom_rebellion (May return in a custom map pack)
+
+MAP ENTITIES:
+
+Added: item_battery_large - Large suit battery
+Added: ctf_banner_small - Small and Large decorative banner
+Added: ctf_flag_barrier - Flag barrier trigger
+Added: ctf_flag_return - Flag return trigger
+Added: ctf_player_flag_drop - Forces player to drop the flag
+Added: ctf_player_flag_return - Forced player to drop and return the flag
+Added: ctf_flag_capture - Trigger entity allowing a player to capture the flag
+Added: ctf_player_capture - Trigger entity allowing a player to score on a timer without carrying a flag
+Added: ctf_flag_capture_point - TC or CP Flag tied to ctf_player_capture for Capture Points
+Added: ctf_team_barrier - Player barrier that can be set to Rebel or Combine team
+Added: ctf_football_flag - Football entity used as the flag for Football mode
+Added: ctf_burst - Powerup to quickly regenerate auxiliary power
+Added: ctf_game_settings_entity - Used to set CTF CVARS such as Game Modes, Capture Limit and Spawn Near Flag
+Added: ctf_filter_activator_runes - Filter all powerups for use by other entities. ie. func_clip_physics
+Added: ctf_player_rune_drop - Forces player to drop powerups.
+Added: ctf_event_announcer - Fires outputs when CTF events occur. (e.g. On Capture, 1min & 5mins Remaining, Map End)
+Added: ctf_weapon_railgun - New custom Railgun Weapon
+Added: ctf_round_reset - Entity that when triggered will reset the map for a new round of gameplay
+Added: ctf_round_timer - Entity for setting the length of a round and reset map entities for a new round
+Added: ctf_team_switch - Entity that when triggered will force switch the teams
+Added: ctf_sound - Custom ambient generic allowing for sound to be played to an individual team or both
+Added: ctf_camera - Custom point camera used to place player view on end of game intermission
+
+SERVER CVARS:
+
+Added: violence_hgibs - toggles gibs. 0 = off, 1 = on (default is 1)
+Added: ctf_snipertracer - toggles Sniper Tracer. 0 = off, 1 = beam (new), 2 = refraction (default)
+Added: ctf_excessive 0/1 - toggles gamemode excessive. See below for details.
+Added: ctf_instagib 0/1 - toggles gamemode instagib. See below for details.
+Added: ctf_extreme 1-10 - sets the size of blood splattering when shooting a player (default = 1)
+Added: ctf_dynamicgrenades - toggles whether grenade color will change when picked up by a opposite team.
+Added: ctf_respawndelay - Allows for custom player respawn delay. (Default 5 seconds)
+Added: tv_allow_static_shots - auto director uses fixed level cameras for screenshots
+Added: tv_allow_camera_man - auto director allows spectators to become camera man
+
+Changed: Server CVAR forcecfg changed to ctf_forcecfg
+
+CLIENT CVARS:
+
+Added: hud_crosshair_r sets crosshair red (RGB) color. (0-255)
+Added: hud_crosshair_g sets crosshair green (RGB) color. (0-255)
+Added: hud_crosshair_b sets crosshair blue (RGB) color. (0-255)
+Added: hud_crosshair_a sets crosshair alpha. (0-255)
+Added: cl_fov replacement for "fov" command, saves fov between 75 and 120 and reloads on every map.
+
+Updated: ctfvcom # now handles ctfvcom 1 - 13
+
+SERVER-SIDE EVENT BROADCASTS:
+
+Added: ctf_flag_capture
+Added: ctf_flag_stolen
+Added: ctf_flag_return
+Added: ctf_flag_assist
+Added: ctf_flag_defend
+Added: ctf_flag_dominate
+Added: ctf_protect_carrier
+Added: ctf_kill_carrier
+Added: ctf_map_end
+Added: ctf_round_start
+
+GAME MODES:
+
+Added: ctf_excessive enables a crazy and fun game mode as detailed below:
+
+- Useable weapons: Melee, 357, SMG1, Alyxgun, AR2, OICW, Shotgun, Crossbow, Sniper Rifle, RPG, Railgun
+- Spawn with 300/300 and have passive 10 armor/sec and 5 health/sec regen
+- Self damage is lowered to 30% and force caused by explosions is increased
+- Each kill grants a killer with additional 50 armor and 50 health
+- No items spawned and Ammo is unlimited (no combine balls)
+- Extreme blood set to 5 for more blood splattering
+- Weapon recoil removed from all weapons
+
+* The ctf_excessive cvar can NOT be used together with ctf_areanamode. ctf_arenamode must be disabled [set to 0]
+
+Added: ctf_instagib "weapon_name" will cause that weapon to become a 1 hit kill as detailed below:
+
+- Example: ctf_instagib weapon_crossbow	makes Crossbow a 1 hit kill (defaults to weapon_ctf_railgun)
+- List of weapons:
+  weapon_357, weapon_crossbow, weapon_crowbar, weapon_stunstick, weapon_pistol, weapon_shotgun, weapon_frag,
+  weapon_ar2, weapon_smg1, weapon_ctf_oicw, weapon_ctf_sniper, weapon_ctf_alyxgun, weapon_rpg
+
+* All other items and weapons are removed in instagib. The weapon chosen for instagib has infinite ammo.
+* The ctf_instagib cvar can NOT be used together with ctf_areanamode. ctf_arenamode must disabled [set to 0]
+
+Added: Football Mode (map entity controlled mode)
+
+- Maps containing a ctf_football_flag entity and ctf_flag_capture triggers enables the mode
+- Gameplay is the same as one-flag except the flag is replaced with a football and football voiceovers
+
+Enhanced: Vanilla CTF Mode
+
+- Player Capture and Player Flag Capture triggers allow for new scoring options (ie. Capture Point, Territorial Capture)
+- Flag enable/disable features allow moving of the flags (ie. Push)
+- Player Spawn enable/disable features (ie. Push and Capture Point)
+- Round Reset and Team Switch allow for round-based gameplay (ie. Attackers versus Defenders)
+
+Examples:
+
+Territorial Capture
+
+- Standing on a territorial capture point progresses toward your team's ownership of the point
+- When one team has owned all of the territorial capture point locations 100% that team is awarded a point
+
+Capture Point
+
+- Standing on a capture point progresses toward your team's ownership of the point
+- Your team is awarded a point once they have captured all of the points in a linear fashion
+
+Attackers versus Defenders
+
+- Carry flags to capture points and continue capturing in a linear fashion
+- Once the team captures the final flag the team is awarded a point and teams are swapped
+- Alteration of this mode has a single capture point with a very long timer to stop the other team
+
+ADDED FEATURES:
+
+Added: Spectator is now like HL2DM where there is a spectator menu. Press +duck key to bring it up
+Added: Players will now take screenshots to the normal /screenshots directory of the endgame scores automatically if ctf_matchmode is on
+Added: Force player models to use Male01 through Male05 for Rebels and Metro Police for Combine
+Added: Team-based Powerups and ability to have Multiple of both Team and Regular Powerups
+Added: Night vision now a standard feature of the player HUD. Assigned key "N" by default
+Added: New Burst Powerup which increases the speed of Auxiliary recharging
+Added: Spawn nearest flag control (enabled/disabled) by adding the new ctf_game_settings_entity to map
+Added: All players respawn at the ctf_camera instead of freezing at the end of the game
+Added: New Railgun weapon shares Crossbow bolt ammo. Multi-kill on secondary charged fire
+Added: Multiple HUD enhancements and Updates, to both Fonts and Elements
+
+CHANGES:
+
+Changed: SMG replaced with "Soul Slayer" SMG model. Updated sound effects
+Changed: Sniper rifle replaced with "50cal MOD V2" model. Updated sound effects
+Changed: Sniper rifle max ammo 6. Ammo clip pickup 3. Ability to fire 3 shots before reloading
+Changed: Sniper rifle reduced from passing through walls 18 units thick to 9 units
+Changed: SLAMs can now be tossed to attach to walls. Tripmine sound effects added and reduced SLAM ammo max to 3
+Changed: OICW airburst ammo increased from 3 to 5 and damage reduced, blast increased
+Changed: Prepflagpass now makes the user run the following command: say_team Tossing flag from $L $H $A
+Changed: Lowered amount of health gained using Drain powerup
+Changed: ctf_powerups now removes/respawns powerups in real-time when changed via RCON
+Changed: Spawn nearest to the flag default. This can be disabled by configuring and compiling a ctf_game_settings_entity into the map.
+Changed: Custom view and world weapon model skins. Credit: VertThrasher and H4wk
+
+Changed: The game name will now reflect game cvars in server browser as follows:
+
+* Default Title         - "CTF"
+* Map Config One-flag   - "CTF - One-Flag"
+* Map Config Domination - "CTF - Domaination"
+* Map Config Football   - "CTF - Football"
+* ctf_arenamode 1       - "CTF - Arena"
+* ctf_excessive 1       - "CTF - Excessive"
+* ctf_instagib <wpn>    - "CTF - Instagib"
+* ctf_matchmode 1       - "CTF - [GameMode] - Match"
+
+Changed: Player Team Radio VCOM messages Reworked and now Range from 1 - 13 as follows:
+
+ctfvcom 1  [KP_END]        = Defending Base
+ctfvcom 2  [KP_DOWNARROW]  = Base is Safe
+ctfvcom 3  [KP_PGDN]       = Base is Under Attack
+
+ctfvcom 4  [KP_LEFTARROW]  = Enemy Carrier Located
+ctfvcom 5  [KP_5]          = Pass the Flag
+ctfvcom 6  [KP_RIGHTARROW] = Protecting Carrier
+
+ctfvcom 7  [KP_HOME]       = Attacking Enemy
+ctfvcom 8  [KP_UPARROW]    = Follow Me
+ctfvcom 9  [KP_PGUP]       = Enemy Defenses are Down
+
+ctfvcom 10 [KP_INS]        = Return the Flag
+ctfvcom 11 [KP_DEL]        = Passing the Flag
+
+ctfvcom 12 [KP_PLUS]       = Affirmative
+ctfvcom 13 [KP_MINUS]      = Negative
+
+REMOVALS:
+
+Removed: FOV now replaced by cl_fov
+Removed: Chargers no longer functional (large battery added)
+Removed: Unnecessary NPC and AI code
+Removed: Ability to use ctf_extramodels in favor of uniform sized player models: Metro Police vs. HEV suited Rebels
+Removed: Server CVAR ctf_disablepropphysics
+
+-----------------------------------------------------------------------------------------
+HL2:CTF Beta 1.71 Changelog - June 1st, 2007
+-----------------------------------------------------------------------------------------
+
+MAPS:
+
+Added: ctf_flare           [BlisTer]
+
+Updated: ctf_floodzone     [MeNtHoL]
+Updated: dom_export        [Domination version: MeNtHoL]
+Updated: 1f_lambda_bunker  [One-flag version: MeNtHoL]
+
+ADDITIONS:
+
+CVARS:
+
+Added: ctf_allowscripts enables/disables the use of aliases and multi-binds
+Added: ctf_idlelimit will force players to spectator team
+Added: ctf_matchmode_password for match mode
+Added: ctf_version to report the mod version in console
+Added: ctf_slamsdiewithowner cvar for whether SLAMs die with owner
+Added: ctf_grenadehp cvar to set frag grenade health allowing shooting of live grenades [15 default | 0 disable]
+Added: ctf_motd displays Message of the Day panel on spawn (0 disables)
+Added: cl_defaultweapon now lets you choose your default weapon
+
+GAME EVENTS:
+
+Added: Event ctf_round_start at beginning of a round
+Added: Event ctf_map_end at the end of a map
+Added: Assist game event to server logging events
+
+RCON:
+
+Added: Saying "ready" will now issue the ready command
+Added: Nextmap RCON command can set the next map
+
+FEATURES:
+
+Added: RPG toggling between guided and non-guided [ attack 2 to switch ]
+Added: Team colored client-side sniper rifle tracers and burn marks
+Added: Ability to shoot live frag grenades
+Added: forceready will force all players to be ready in match mode
+
+FIXES:
+
+Fixed: Crossbow sprite bug
+Fixed: One flag now properly removed on ctf_ maps that still have it
+Fixed: Notify/chat text bug
+Fixed: Some map reset bugs
+Fixed: RPG autoswitch bug
+Fixed: Clients connecting after the end of the round should be frozen
+Fixed: Players no longer get stuck in ladders if they die while getting off a ladder
+Fixed: Shotgun now spawns with proper number of rounds in clip (8 in Pro, 6 in HL2DM)
+Fixed: Gravity gun functions the same in both Pro-mode and HL2DM mode
+Fixed: Shotgun reload fast-fire exploit
+Fixed: Alyxgun over recoil causing left arm to rise too high
+Fixed: Dropping unlimited cooked grenades exploit
+Fixed: Spectator ability to drop items
+Fixed: SourceTV camera positioning
+Fixed: Grenade ammo crate exploit
+Fixed: hud_quickinfo 0/1 now switchable in ProMode
+Fixed: Ability to fire +use over a weapon spawn to stop weapon from spawning exploit
+Fixed: sv_gravity CVAR control in both modes [ defaults on mode switch pro 800 | DM 600]
+Fixed: SLAM not sticking to players causing them to become trapped
+Fixed: Crossbow zoom being stuck after dying with the crossbow zoomed in
+Fixed: Crossbow bolts sticking live in the flag
+Fixed: Arena mode gives all weapons and ammo (other than AR2 secondary ammo) immediately upon change
+Fixed: bot_add only allowed with sv_cheats enabled
+Fixed: mp_forcerespawn should now toggle whether the player is forced to respawn
+
+CHANGES:
+
+Changed: Suit charger now has maximum juice of 30 in HL2DM mode / 50 in Promode
+Changed: In matchmode, both teams get the crowbar
+Changed: Increased velocity required before taking damage when hitting the ground
+Changed: Blast damage tweaked for rocket jumping in ProMode
+Changed: Shotgun strength reduced in Promode
+Changed: Rune respawn time [ original 10 | current 15 ]
+Changed: Alyxgun recoil and spread
+
+-----------------------------------------------------------------------------------------
+HL2:CTF Beta 1.7 Changelog - January 31, 2006
+-----------------------------------------------------------------------------------------
+
+MAPS:
+
+ctf_defrost      [MeNtHoL]
+ctf_dirtwork     [MeNtHoL]
+ctf_floodzone    [MeNtHoL]
+ctf_prisonriot   [Keved]
+ctf_substation   [Previously Subway: Susso / MeNtHoL]
+ctf_thegreatwall [Keved]
+dom_np_refinery  [Keved]
+dom_rebellion    [Demented]
+dom_rust         [Atrocity]
+
+ADDITIONS:
+
+Added: Added small dynamic light to airburst tracer and is now more random
+Added: Strafe jumping into a wall now causes you to rebound (walljump)
+Added: ctf_promode cvar to toggle between Pro/HL2DM mode
+Added: Players now spawn at the farthest spawn from where they died
+Added: restartround command
+Added: Radar icon will now rotate in the direction it is pointing (easier to understand)
+Added: Time delay for round restart to notify players of the upcoming change
+Added: Bloom effect toggled by mat_bloom 0/1
+Added: Wall jump should now play a jump sound using the material sound of the wall
+Added: Support for additional player models (ctf_extramodels 0/1)
+Added: cl_rebelmodel, cl_combinemodel for choosing a prefered model
+Added: ctf_flag_capture triggers
+Added: "OnCapture" output to ctf_flag_capture trigger
+Added: Support for automatic one flag mode
+Added: Added the name of the person you are spectating to the HUD
+Added: ctf_weapons cvar to toggle the Sniper, OICW and Alyx Gun (Bit mask)
+
+FIXES:
+
+Fixed: Minor "suit" display bug
+Fixed: Laser sprite drawing bugs
+Fixed: ctf_flag_dominate event should now be logged
+Fixed: Sound should no longer loop after missile is destroyed
+Fixed: Minor display bug with hud_quickinfo
+Fixed: Pulling in an item above your head with the gravity gun will now pick it up properly
+Fixed: Now possible to adjust mp_timelimit in the middle of a game
+Fixed: Added headshots to log output
+Fixed: Smoke/fire trail should no longer hang around after grenades/rpg missile is destroyed
+Fixed: restartround command can no longer be issued by clients
+Fixed: hud_quickinfo will now show when using the sniper rifle
+Fixed: dropweapon command now works when mp_weaponstay is 1
+Fixed: Fire sprites should no longer hang around after a prop_physics_respawnable is destroyed
+Fixed: Removed weapon effects from first person spectator mode
+Fixed: Map reset now resets loose flags
+Fixed: RPG laser should no longer attach itself to other weapons
+Fixed: Slight glitch in icon scroller when you have more than two icons
+Fixed: HUD elements now align properly if resolution is switched during a game
+
+CHANGES:
+
+Changed: Reduced airburst grenade ammo pickup to single grenades
+Changed: Increased airburst damage slightly
+Changed: Reduced maximum charge from citadel style charger to 150 armor
+Changed: Increased velocity gained from DMG_BLAST and reduced self-damage by 1/2
+Changed: Increased rocket ignition time (feels more responsive)
+Changed: Reduced RPG damage
+Changed: Removed DSP ear ringing effect when rocketjumping
+Changed: Expanded flag bounding box slightly
+Changed: Increased grace period for friction (bunnyhop)
+Changed: Enabled hud_quickinfo 1 by default
+Changed: Team-colorized hud_quickinfo
+Changed: Hardcoded sv_maxspeed, sv_gravity and ctf_respawndelay
+Changed: Integrated radar with hud_quickinfo
+Changed: Increased alpha value on hud_quickinfo radar
+Changed: RPG no longer has a crosshair in pro mode (laser dot is accurate)
+Changed: Blood decals now removed when player picks up the cloak rune
+Changed: Weapons that no longer have the center crosshair in pro mode: gravity gun, stunstick, crowbar, shotgun, RPG, sniper rifle
+Changed: Various HUD color tweaks
+Changed: Changing cl_playermodel no longer changes your team. This cvar now determines which model should be prefered when you join a team
+Changed: Chat HUD/Scoreboard colors now more consistent
+Changed: Adjusted scoreboard positioning
+Changed: Players now spawn on combine or rebels unless ctf_matchmode is 1
+Changed: mp_falldamage re-enabled for HL2DM mode, falldamage is now fixed at 10 in pro mode
+
+REMOVALS:
+
+Removed: Footstep sounds no longer play when walking or crouching
+Removed: sv_gravity, sv_maxspeed, ctf_respawndelay, ctf_warmup, ctf_requireready, ctf_domination, ctf_oneflag (Use Match Mode)
+
+EXTRAS:
+
+Translations: French translation
+Security: Encrypted weapon scripts
+
+ADDITIONAL INFO:
+
+Info: hud_showcarrier can be used to show the flag carrier names on the HUD
+Info: hud_hitsound can be used to play a sound when you register a hit on another player
+Info: hud_specnames can be used to toggle display of player names in spectator/sourcetv mode
+
+ctf_extramodels adds the following models:
+
+models/eli.mdl
+models/kleiner.mdl
+models/alyx.mdl
+models/humans/group03m/male_01.mdl
+models/humans/group03m/male_02.mdl
+models/humans/group03m/female_01.mdl
+models/humans/group03m/female_02.mdl
+
+-----------------------------------------------------------------------------------------
+HL2CTF Beta 1.61 Changelog - December 29, 2005
+-----------------------------------------------------------------------------------------
+
+FIXES:
+
+Fixed: Potential client side crash due to unchecked pointer in sniper laser dot
+Fixed: Fix SLAMs blowing up when laser penetrates a grate brush
+Fixed: SLAMs attached to prop_physics now move with them and explode when their beam is disrupted
+Fixed: ShowMenu style menus implemented (Mani)
+Fixed: Drain rune no longer reduces your armor when you have more than 150 armor
+Fixed: SLAMs now detonate only when their owner dies
+Fixed: SLAM view model animation should be more fluid now
+Fixed: Player model should now more accurately reflect the aim pitch/yaw of the player
+Fixed: Shield now definately aborbs 35% of damage instead of 50%
+Fixed: ctf_allowturret 0 should no longer crash linux servers
+Fixed: Sniper laser dot no longer draws on top of everything
+Fixed: All team colored sprites now use the same material/colors
+
+UPDATES:
+
+Updated: Sniper rifle now does 85 damage for a body shot, and 170 damage for a head shot
+Updated: OICW airburst now does less damage over a smaller radius
+
+ADDITIONS:
+
+Added: Beam attached to the front of the sniper when zoomed in
+Added: Team capture count to scoreboard section headers
+
+Removed: Tau cannon
+
+-----------------------------------------------------------------------------------------
+HL2CTF Beta 1.6 Changelog - December 14, 2005
+-----------------------------------------------------------------------------------------
+
+WEAPONS:
+
+Added: Gauss ('Modified' Tau Cannon) to weapons for jumping and pushing players
+Added: Alyx Gun to Weapons
+Added: OICW to Weapons
+Added: Zoom added to OICW
+Added: spiral tracer for OICW AirBurst
+Added: Sniper Rifle to Weapons
+Added: Sniper rifle has two levels of zoom (fov 20, fov 5)
+Added: Sniper rifle instant-hit penetrates walls (12 units thick), props and players (up to 6)
+Added: Sniper rifle inaccurate and recoils when not zoomed in
+Added: Crowbar and stunstick now use the same refire time, range, and damage settings
+Added: Frag grenade glow/trails are now team colored
+Added: SLAM laser now team colored
+Added: SLAM detonates when the owner switches teams
+
+TURRETS:
+
+Fixed: Turrets no longer loop alarm sound effects
+Fixed: Turrets no longer use tracers causing phantom tracers through walls
+
+Added: Turrets easier to knock over and slightly less powerful
+
+RUNES:
+
+Fixed: Cloak texture replicates similar effect on older versions of DirectX
+Fixed: All Rune sounds are now broadcast globally
+Fixed: Reduced shield powerup values
+Fixed: Reduced drain powerup values
+Fixed: Reduced regen powerup values
+
+Added: Haste rune removed, replaced by Cloak rune
+Added: Cloak texture visibility based on the player’s speed
+Added: Changed runes to droppable/hold-until-death
+Added: Runes respawn at their origin after 30 second timeout
+
+HUD:
+
+Fixed: Improved scoreboard with added assists column
+
+Added: Entire HUD is now team colored
+Added: HUD flag and award indicators slide out and animate when changing states
+Added: Award icons for Assist, Capture, Return and Defend
+Added: +1, +2 and +5 icons over the player’s head when they get a bonus
+Added: HUD Radar for domination/oneflag showing flag carrier's location
+Added: New icon for warmup and requireready
+Added: Timer bar displayed during warmup
+Added: HUD Ready status now indicated by new icon
+Added: Timeleft HUD display
+
+SOURCETV:
+
+Fixed: SourceTV director now properly broadcasts and prioritizes CTF events
+Fixed: SourceTV now uses a random fixed camera when nothing is going on
+Fixed: SourceTV now delays the server map change until the broadcast is finished
+Fixed: SourceTV should prefer players who are fighting enemies to players who are grouped with teammates
+Fixed: SourceTV chat no longer cuts off the last character
+
+Added: SourceTV cameraman enabled
+
+SPECTATOR:
+
+Fixed: Spectators can no longer spray, use the flashlight or issue any other impulse commands
+Fixed: Spectators can no longer use weapons or pick them up
+
+Added: hud_specnames (default: 1) shows the name of multiple players when in spectator mode
+
+CVARS:
+
+Added: Client option to display the name of the flag carrier on the HUD (hud_showcarrier)
+Added: Client option to play a sound when you register a hit on another player (hud_hitsound)
+Added: Ability to force fair models for a match (ctf_matchmode 1)
+Added: ctf_forcemelee cvar to force flag carrier to use only melee weapons and gravity gun
+Added: dropweapon command which drops your active weapon with some reserve ammo if available
+Added: dropbattery command
+
+REMOVALS:
+
+Removed: voteyes/voteno, ctfmapvote, ctfgamemodevote commands (MANI)
+Removed: ctf_capturestrike, ctf_stopwatch game modes
+Removed: All sound spam messages from console
+Removed: ctfmapvote and ctfgamemodevote
+
+UPDATES:
+
+Update: Players no longer spawn with the SMG
+Update: Combine team's gravity gun is now blue
+Update: Fixed combine ball from killing you when firing while running
+Update: Footsteps are the same for both teams and use material sound effects
+Update: Player model uses proper sequence when changing weapons during a jump (no more ref pos)
+Update: Map now fully resets after warmup including all props
+Update: CTF Warmup no longer subtracts from mp_timelimit
+Update: Fixed changeTeam +1 score bug when changing team via model
+Update: Ladders no longer trap observers/dead players
+Update: Fixed protect allowing you to protect yourself
+Update: Fixed assist allowing you to assist yourself
+Update: Players are now forced to join a team when autoteambalance is on
+Update: Jointeam no longer gives an extra frag in certain cases
+Update: Arena mode gives you the new CTF weapons
+Update: Location entities optimizations
+Update: Keyboard configuration GUI updated with new items
+Update: Health/suit charger models now show the correct amount of juice remaining
+Update: Fixed server.cfg executing prior to loading the first map
+Update: Added sound to indicate round start after warmup
+Update: Maps with no rebel/combine flags should now force ctf_domination 1
+Update: Cannot steal the flag through the floor when flag is on the floor above the player
+Update: Added headshot capability with rebel/combine headshot obituary icons
+Update: Fixed 'has joined the game' message appearing during the players initial spawn only
+Update: Can pick up weapons dropped by players even if mp_weaponstay is on
+Update: Periodic award for domination flag carrier (2 points every 30 seconds)
+Update: Radio commands are now localized to your steam-selected language
+Update: Translation layer added: Spanish
+
+-----------------------------------------------------------------------------------------
+HL2CTF Beta 1.5 Changelog - July 22, 2005
+-----------------------------------------------------------------------------------------
+
+MAPS:
+
+Added: ctf_raven            [Sander]
+Added: ctf_greatwall        [Keved]
+Added: ctf_export           [MagicTMP / raeven0]
+
+Updated: ctf_dirtwork       [MeNtHoL]
+Updated: ctf_portalstorm    [Bluestrike]
+Updated: ctf_subway         [Susso / MeNtHoL]
+Updated: ctf_lambda_bunker  [Atrocity / MeNtHoL]
+
+FEATURES:
+
+Added: Support for SourceTV
+Added: Command to automatically move flag to gravity gun
+Added: Radio commands
+Added: Scoreboard icons
+Added: Placable sentry turrets
+Added: Text under rune icons to tell which ones they are
+Added: Flag defend and enemy flag carrier kill awards to log
+Added: Chat macro for current location ($L)
+Added: Optional score handicap for matches
+Added: A "No slam zone" entity for mappers
+Added: Sound for rune expiring
+Added: Main menu music
+
+FIXES:
+
+Fixed: ladder movement
+Fixed: Reduced carried combine ball ammo to 2
+Fixed: Combine balls can now kill the player who fired them
+Fixed: Game mode is now displayed in server browser
+Fixed: Enabled haste rune for increased sprinting power
+Fixed: Domination now periodically displays location of flag carrier
+Fixed: Renamed weapon switch cvar to cl_autowepswitch to be same as HL2DM
+Fixed: Improved rune models with more visible markings
+Fixed: Changed combine footstep sounds to be the same as rebels
+Fixed: Reworked the Domination Mode HUD to make it smaller
+Fixed: Increased protection given by Shield Rune
+Fixed: Increased recovery rate given by Regen Rune
+Fixed: Increased rate of health and suit chargers
+Fixed: Improved Warmup HUD
+Fixed: Voting now uses VGUI menus
+Fixed: Renamed "mapvote" command to "ctfmapvote"
+Fixed: Renamed "gamemodevote" command to "ctfgamemodevote"
+Fixed: Tweaked movement settings
+Fixed: Integrated latest SDK code
+Fixed: First person spectator mode
+Fixed: Player death log not conforming to Half-Life Standard Log Format Specification
+Fixed: Flag carrier icon not displaying in Domination Mode
+Fixed: Domination Mode sometimes continuing play when victory for one team was impossible
+Fixed: Spectators being able to use health chargers
+Fixed: Spectators being able to use func_buttons
+Fixed: Require ready message sometimes not disappearing
+Fixed: Bug where Sudden Death sound would play when time expired if overtime was disabled
+Fixed: Placed slams are now removed at end of warmup
+Fixed: Removed error messages in console for unused weapons
+Fixed: Suicide death notice when initially joining team
+Fixed: Running out of suit power while sprinting no longer turns off flashlight
+
+-----------------------------------------------------------------------------------------
+HL2:CTF Beta 1.41 Changelog - May 19, 2005
+-----------------------------------------------------------------------------------------
+
+FEATURES:
+
+Added: Description of game mode objectives now displayed when players join a server
+Added: CTF events now use Half-Life Standard Log Format Specification
+Added: Players no longer spawn with combine ball ammo in Arena and CaptureStrike modes
+Added: Improved spectator movement
+Added: ability to vote on game mode using "gamemodevote"
+Added: cvar for servers to disable physics props
+Added: cvar to mute spectator chat to non-spectators
+
+FIXES:
+
+Fixed: Spectator chase cam
+Fixed: Default ctf_capturestrike_timelimit to 4
+Fixed: Always mute dead player's chat to living players in CaptureStrike mode
+Fixed: Allow dead players in CaptureStrike mode to use roaming spectator
+Fixed: Possible crash from chat macro use
+Fixed: voting hud showing incorrectly
+Fixed: ctf_enablechatmacros cvar not working in some cases
+Fixed: Not being able to use roaming spectator after joining a team
+
+-----------------------------------------------------------------------------------------
+HL2:CTF Beta 1.4 Changelog - May 13, 2005
+-----------------------------------------------------------------------------------------
+
+MAPS:
+
+Added: ctf_combine      [amckern]
+Added: ctf_pillars      [Soldier-of-BaL]
+Added: ctf_portalstorm  [Bluestrike]
+
+Updated: ctf_canals     [Sander]
+Updated: ctf_defrost    [MeNtHoL]
+Updated: ctf_gunshot    [Atrocity / cman]
+Updated: ctf_prisonriot [Keved]
+Updated: ctf_subway     [Susso / MeNtHoL]
+
+FEATURES:
+
+Added: 1Flag Game Mode
+Added: Domination Game Mode
+Added: Stopwatch Game Mode
+Added: CaptureStrike Game Mode
+Added: Chat macros for things like health, armor, weapon, etc
+Added: Optional powerup runes
+Added: Sudden death overtime cvar
+Added: Increased map voting time to 90 seconds
+Added: Voting text to the HUD
+Added: ctf_mercyrule cvar
+Added: Incorporated latest SDK changes to reduce lag
+Added: Team specific triggers for mappers
+Added: sounds for some scoring bonuses
+Added: SLAMs not placable within a small radius of the flag
+
+FIXES:
+
+Fixed: Bug where players couldn't see each other's votes
+Fixed: incorrect spelling of "Rocket Launcher"
+Fixed: Disconnect spam (player joined team unassigned)
+Fixed: Spelling error on weapon HUD
+Fixed: Scoring bug from switching teams too often
+
+-----------------------------------------------------------------------------------------
+HL2:CTF Beta 1.3 Changelog - April 4, 2005
+-----------------------------------------------------------------------------------------
+
+MAPS:
+
+Added: ctf_subway          [Susso]
+Added: ctf_canals          [Sander]
+Added: ctf_stinger         [amckern]
+Added: ctf_storm           [Atrocity]
+
+Updated: ctf_defrost       [MeNtHoL]
+Updated: ctf_dirtwork      [MeNtHoL]
+Updated: ctf_prisonriot    [Keved]
+Updated: ctf_lambda_bunker [Atrocity]
+Updated: ctf_gunshot       [Atrocity / cman]
+
+FEATURES:
+
+Added: Ready up system
+Added: Map voting system
+Added: Notification of when you were auto-switched to balance teams
+Added: 2 point scoring bonus for assists
+Added: cl_redenemy which allows mouse over to enemy to always be red and mouse over friendly to always be green
+Added: Flashing text to indicate flag status
+Added: Players can now set their fov between 75 and 120 using "fov X"
+Added: Allow the gravity gun to push other players
+Added: Game events for flag capture, flag return, and assist
+Added: New scoreboard size
+Added: CTF game options to menu
+
+FIXES:
+
+Fixed: Team balance doesn't wait until death anymore and always switches lowest scoring player
+Fixed: Changed slam color to indicate team
+Fixed: Increased shotgun clip to 8 shots and reduced max carry count
+Fixed: Restored Crossbow damage to DM level
+Fixed: Longstanding HL2DM underwater sound death bug
+Fixed: Auto team balance keeping you dead
+Fixed: cl_autoweaponswitch not working in some situations
+Fixed: Sprint added to the list of keybinds
+
+REMOVALS:
+
+Removed: starting 25 armor
+Removed: RPG laser dot
+
+-----------------------------------------------------------------------------------------
+HL2:CTF Beta 1.2 Changelog - March 16, 2005
+-----------------------------------------------------------------------------------------
+
+MAPS:
+
+Added: ctf_gunshot         [Atrocity / cman]
+
+Updated: ctf_defrost       [MeNtHoL]
+Updated: ctf_2fort_lite    [Owner]
+Updated: ctf_curved        [Owner]
+Updated: ctf_lambda_bunker [Atrocity]
+
+FEATURES:
+
+Added: ctf_respawndelay to allow servers to set how long players wait before respawn
+Added: ctf_warmup to allow warmup mode (set to # seconds of warmup)
+Added: Re-enabled sprint and added walk/run speed difference
+Added: Extra scoreboard stats for captures, returns, and flag carrier kills
+Added: cl_autoweaponswitch cvar to not switch weapon on pickup
+Added: auto-team balance 
+Added: Second default key (M) to open team selection menu
+Added: Text to spectator hud reminding users how to open team selection menu
+Added: New SMG and pulse rifle damage
+Added: Rockets dumb fire only
+Added: Changed default spawn weapon to smg from gravity gun
+Added: New and Improved HUD
+Added: Once you drop the flag, you can't pick it up for 3 seconds
+Added: ctf_return_flag entity
+
+FIXES:
+
+Fixed: Bug that could cause crash immediately on joining a server
+Fixed: Bug where players killed at just the right time could respawn during intermission
+Fixed: Default sk_healthkit value to 25
+Fixed: Bounding box on flag being too big
+Fixed: Incorrect RPG weight 
+
+-----------------------------------------------------------------------------------------
+HL2:CTF Beta 1.1 Changelog - March 2, 2005
+-----------------------------------------------------------------------------------------
+
+MAPS:
+
+Added: ctf_lambda_bunker [Atrocity]
+
+Updated: ctf_prisonriot  [Keved]
+Updated: ctf_curved      [Owner]
+
+FEATURES:
+
+Added: Dropflag bind to allow players to drop the flag
+Added: Flag carrier indicator on hud to show who has the flag
+Added: Extra 1 point bonus for killing enemy flag carrier
+Added: Extra 2 point bonus for killing enemy near your flag
+
+FIXES:
+
+Fixed: Flag does not clip with players anymore
+Fixed: Mouse over a player shows their name and team
+Fixed: Reduced combine ball lifetime to 3 seconds
+Fixed: Cheat that allowed players to use invalid player models
+Fixed: Crash caused by players using invalid player models
+Fixed: Crash caused by looking up bogus animations
+Fixed: Spectator movement
+Fixed: Bug where players could respawn during intermission and go killing people
+Fixed: Bullet holes no longer leave strange marks on rebel flag
+Fixed: Flag indicator not being reset between levels
+
+-----------------------------------------------------------------------------------------
+HL2:CTF Beta 1.0 Changelog - February 23, 2005
+-----------------------------------------------------------------------------------------
+
+MAPS:
+
+Added: ctf_2fort_lite  [Owner]
+Added: ctf_trainingday [KingNic]
+Added: ctf_curved      [RipeX]
+Added: ctf_prisonriot  [keved]
+
+Updated: ctf_defrost   [Previously ctf_map01: MeNtHoL]
+Updated: ctf_dirtwork  [Previously ctf_ent_test: MeNtHoL]
+
+FEATURES:
+
+Added: Remaining HL2 weapons
+Added: Tweaked weapon damages
+Added: Increased rate of fire of pistol
+Added: Scoring bonus of 5 points for capturing the flag
+Added: Scoring bonus of 2 points for returning your flag
+Added: Team selection option to keyboard config screen
+Added: New ammo crate models
+
+FIXES:
+
+Fixed: MOTD now comes before team selection menu on first join
+Fixed: Tweaked player speed
+Fixed: Increased map intermission time when changing levels
+Fixed: Reduced combine ball carry count to 3
+Fixed: env_entity_dissolver message in console
+Fixed: Dead bodies lying all over the floor
+Fixed: Bug that allowed players to get extra weapons 
+Fixed: Bug that caused ctf_capturelimit to sometimes be ignored 
+Fixed: Incorrect & missing weapon sounds
+Fixed: The missing widescreen background image
+Fixed: Laser dot remaining if you were killed while holding rocket launcher
+Fixed: Team name text displaying in wrong position on some resolutions
+Fixed: The rocket spam bug
+
+-----------------------------------------------------------------------------------------
+HL2:CTF Internal Beta Release - December 2, 2004
+-----------------------------------------------------------------------------------------
+
+MAPS:
+
+Added: ctf_map01    [MeNtHoL]
+Added: ctf_ent_test [MeNtHoL]
+
+FEATURES:
+
+Added: Flag Models
+Added: Ability to Capture Flags

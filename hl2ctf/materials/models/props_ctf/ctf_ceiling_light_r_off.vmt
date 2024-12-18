@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\props_ctf\ctf_ceiling_light_r"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "models\props_ctf\ctf_ceiling_light_ref"
+	"$nodecal" "1"
+}

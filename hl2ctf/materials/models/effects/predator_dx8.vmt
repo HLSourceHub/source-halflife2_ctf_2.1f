@@ -1,0 +1,24 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models/effects/predator_fog"
+	"$surfaceprop" "flesh"
+	"$translucent" 1
+	"$nodecal" 1
+	"$nofog" 1
+	"$model" 1
+
+	"Proxies"
+	{
+		"CloakSpeed"
+		{
+			"resultVar"	"$alpha"
+		}
+
+		"TextureScroll"
+		{
+			"texturescrollvar" "$basetexturetransform"
+			"texturescrollrate" .25
+			"texturescrollangle" 180
+		}
+	}
+}

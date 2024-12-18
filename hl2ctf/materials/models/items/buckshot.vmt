@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	// Original shader: VertexLitTexture
+	"$basetexture" "Models/Items/buckshot"
+ 	"$BumpMap" "models\Items\buckshot_norm"
+}

@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	// Rebel Flag
+	"$baseTexture" "models/flag/flagcloth_r"
+	"$surfaceprop" "metal"
+	"$selfillum" 1
+	"$nodecal" 1
+	"$nocull" 1
+	"$model" 1
+}

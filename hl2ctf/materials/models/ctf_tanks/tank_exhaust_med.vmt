@@ -1,0 +1,20 @@
+"UnlitTwoTexture"
+{
+	"$baseTexture" "models\ctf_tanks\tank_exhaust"
+	"$Texture2" "models\ctf_tanks\tank_tube_plasma_med"
+	"$nocull" "1"
+	"$nodecal" "1"
+	"$additive" "1"
+	"$no_fullbright" "1"
+	"$model" "1"
+
+	"Proxies"
+	{
+    "TextureScroll"
+    {
+      "texturescrollvar" "$texture2transform"
+      "texturescrollrate" 1
+      "texturescrollangle" 90
+		}
+	}
+}

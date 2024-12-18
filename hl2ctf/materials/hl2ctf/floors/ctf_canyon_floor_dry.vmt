@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "hl2ctf/floors/ctf_canyon_floor_dry"
+	"$bumpmap" "hl2ctf/floors/ctf_canyon_floor_normal"
+	"$surfaceprop" "concrete"
+	"%keywords" "hl2ctf"
+}

@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/ctf_gibs/gibs_hev_sheet"
+	"$surfaceprop" "plastic"
+	"$nodecal" 1
+	"$model" 1
+}

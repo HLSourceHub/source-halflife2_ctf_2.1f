@@ -1,0 +1,21 @@
+"UnlitTwoTexture"
+{
+	"$basetexture" "hl2ctf/water/2fort_waterfall_fast_alpha"
+	"$texture2" "hl2ctf/water/2fort_waterfall_fast_top"
+	"$translucent" 1
+	"$nocull" 1
+	"$nofog" 1
+	"$additive" 1
+	"$nodecal" 1
+
+	"Proxies"
+	{
+	           
+    "TextureScroll"
+		{
+			"texturescrollvar" "$texture2transform"
+			"texturescrollrate" .3
+			"texturescrollangle" 270
+		}
+	}
+}
